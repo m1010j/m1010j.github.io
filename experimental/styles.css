@@ -108,9 +108,11 @@ main {
 
 }
 
-.content {
+#content {
   opacity: inherit;
   grid-row-start: 2;
+  grid-column-start: 1;
+  grid-column-end: span 4;
   font-family: 'Barlow', sans-serif;
   font-weight: 500;
   font-size: 1.3rem;
