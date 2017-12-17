@@ -56,6 +56,7 @@ main {
   box-shadow: none;
   font-size: 1.2rem;
   background-color: transparent;
+  z-index: 1;
   transition: opacity .5s ease-in-out, box-shadow .18s ease-out, font-weight .18s ease-out, color .18s ease-out, background-color .18s ease-out, font-size .18s ease-out;
 }
 
@@ -118,4 +119,10 @@ main {
   font-size: 1.3rem;
   padding: 1rem;
   transition: opacity .5s ease-in-out;
+  overflow: auto;
+}
+
+iframe {
+  width: 72.5vw;
+  height: 95.85vw;
 }
