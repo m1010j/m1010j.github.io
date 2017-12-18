@@ -71,10 +71,10 @@
 
 
 var contents = {
-  home: '\n    Hello Home\n  ',
+  home: '\n    <p><img class="portrait" src="matthias-jenny.png" />Hi, I\'m Matthias Jenny, and I\'m a full-stack web developer and teacher with a passion for logic. I\'m located in New York City and I work at <a href="https://www.appacademy.io/">App Academy</a>.<p>\n    <p>Favorite technologies:</p>\n    <p>\n      <center>\n        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img class="icon" src="./icons/javascript.png" /></a>\n        <a href="https://github.com/facebook/react"><img class="icon" src="./icons/react.png" /></a>\n        <a href="https://www.ruby-lang.org/en/"><img class="icon" src="./icons/ruby.png" /></a>\n        <a href="http://rubyonrails.org/"><img class="icon" src="./icons/rails.png" /></a>\n        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><img class="icon" src="./icons/html5.png" /></a>\n        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img class="icon" src="./icons/css3.png" /></a>\n      </center>\n    </p>\n  ',
   projects: '\n    <a href="mailto:matthiascjenny@gmail.com">Hello Projects</a>\n  ',
-  contact: '\n    Hello Contact\n  ',
-  resume: '\n    <center><iframe\n    src="https://docs.google.com/presentation/d/e/2PACX-1vSvbIgZ_s_z-P2f-WrCXbGA4-nrTgCfU6Zr7ozlHnoViAZ92P2syQZyh22_ZTlmtW2dCbyRHFdcNotw/embed?start=false&loop=false&delayms=1000"\n    frameborder="0"\n    allowfullscreen="true"\n    mozallowfullscreen="true"\n    webkitallowfullscreen="true">\n    </iframe></center>\n  '
+  resume: '\n  <p><a href="./Matthias_Jenny_Resume.pdf"><i class="fa fa-download" aria-hidden="true"></i> Download resume</a></p>\n  <center><iframe\n  src="https://docs.google.com/presentation/d/e/2PACX-1vSvbIgZ_s_z-P2f-WrCXbGA4-nrTgCfU6Zr7ozlHnoViAZ92P2syQZyh22_ZTlmtW2dCbyRHFdcNotw/embed?start=false&loop=false&delayms=1000"\n  frameborder="0"\n  allowfullscreen="true"\n  mozallowfullscreen="true"\n  webkitallowfullscreen="true">\n  </iframe></center>\n  ',
+  contact: '\n    <p><a href="mailto:matthiascjenny@gmail.com"><i class="fas fa-envelope"></i> matthiascjenny@gmail.com</a></p>\n    <p><a href="https://github.com/m1010j"><i class="fab fa-github"></i> github.com/m1010j</a></p>\n    <p><a href="https://www.linkedin.com/in/m1010j/"><i class="fab fa-linkedin"></i> linkedin.com/in/m1010j</a></p>\n\n  '
 };
 
 document.addEventListener('DOMContentLoaded', function () {

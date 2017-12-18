@@ -30,7 +30,7 @@ body::after {
 main {
   opacity: 0;
   background-color: #FFF;
-  height: 80vh;
+  max-height: 80vh;
   width: 80%;
   margin: 10vh auto;
   display: grid;
@@ -40,6 +40,44 @@ main {
   border-radius: .3rem;
   box-shadow: 0 1.2rem 3rem 0 rgba(0,0,0,0.19), 0 .8rem 2rem 0 rgba(0,0,0,0.24);
   transition: opacity .5s ease-in-out;
+}
+
+a {
+  font-weight: 700;
+  color: black;
+  text-decoration: none;
+  transition: color .18s ease-in-out;
+}
+
+a:hover {
+  color: #666;
+  transition: color .18s ease-in-out;
+}
+
+p {
+  text-align: justify;
+  padding: .5rem;
+}
+
+.portrait {
+  height: 12rem;
+  float: left;
+  width: auto;
+  border-radius: 100%;
+  margin: .5rem 1rem 2rem 0;
+  opacity: 1;
+}
+
+.icon {
+  height: 3rem;
+  padding-left: 1rem;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.icon:hover {
+  -webkit-filter: none;
+  filter: none;
 }
 
 .navitem {
