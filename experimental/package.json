@@ -1,0 +1,28 @@
+{
+  "name": "m1010j.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "style.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m1010j/m1010j.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/m1010j/m1010j.github.io/issues"
+  },
+  "homepage": "https://github.com/m1010j/m1010j.github.io#readme",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^3.10.0"
+  }
+}
