@@ -1,6 +1,6 @@
 const contents = {
   home: `
-    <p><img class="portrait" src="matthias-jenny.png" />Hi, I'm Matthias Jenny, and I'm a full-stack web developer and teacher with a passion for logic. I'm located in New York City and I work at <a href="https://www.appacademy.io/">App Academy</a>.<p>
+    <p><img class="portrait" src="./img/matthias-jenny.png" />Hi, I'm Matthias Jenny, and I'm a full-stack web developer and teacher with a passion for logic. I'm based in New York City and I work at <a href="https://www.appacademy.io/">App Academy</a>. I also like <a href="https://500px.com/m1010j">photography</a>.<p>
     <p>Favorite technologies:</p>
     <p>
       <center>
@@ -14,7 +14,18 @@ const contents = {
     </p>
   `,
   projects: `
-    <a href="mailto:matthiascjenny@gmail.com">Hello Projects</a>
+    <p>
+      <h1>Andor</h1>
+      <h2><a href="http://matthiasjenny.com/andor/">Live</a> | <a href="https://github.com/m1010j/andor">GitHub</a></h2>
+      <img src="./img/andor.gif" class="project-gif" />
+      An original logic game that teaches players the rules of the Boolean connectives. Built with React and Redux.
+    </p>
+    <p>
+      <h1>LivePoll</h1>
+      <h2><a href="http://live--poll.herokuapp.com">Live</a> | <a href="https://github.com/m1010j/LivePoll">GitHub</a></h2>
+      <img src="./img/livepoll.gif" class="project-gif" />
+      A Poll Everywhere clone built with Rails, React, Redux, Pusher, and AWS.
+    </p>
   `,
   resume: `
   <p><a href="./Matthias_Jenny_Resume.pdf"><i class="fa fa-download" aria-hidden="true"></i> Download resume</a></p>

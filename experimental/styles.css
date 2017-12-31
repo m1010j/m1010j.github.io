@@ -64,7 +64,7 @@ p {
   float: left;
   width: auto;
   border-radius: 100%;
-  margin: .5rem 1rem 2rem 0;
+  margin: .5rem 1rem 0 0;
   opacity: 1;
 }
 
@@ -158,6 +158,22 @@ p {
   padding: 1rem;
   transition: opacity .5s ease-in-out;
   overflow: auto;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.project-gif {
+  float: left;
+  margin: .5rem 1rem 0 0;
+  opacity: 1;
+  height: auto;
+  width: 12rem;
 }
 
 iframe {
