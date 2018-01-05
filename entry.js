@@ -16,7 +16,7 @@ const contents = {
   projects: `
     <p>
       <h1>Andor</h1>
-      <h2><a href="http://matthiasjenny.com/andor/">Live</a> | <a href="https://github.com/m1010j/andor">GitHub</a></h2>
+      <h2><a href="http://www.andor.fun/">Live</a> | <a href="https://github.com/m1010j/andor">GitHub</a></h2>
       <img src="./img/andor.gif" class="project-gif" />
       An original logic game that teaches players the rules of the Boolean connectives. Built with React and Redux.
     </p><br />
