@@ -19,10 +19,10 @@ const contents = {
       <h2><a href="http://matthiasjenny.com/andor/">Live</a> | <a href="https://github.com/m1010j/andor">GitHub</a></h2>
       <img src="./img/andor.gif" class="project-gif" />
       An original logic game that teaches players the rules of the Boolean connectives. Built with React and Redux.
-    </p>
+    </p><br />
     <p>
       <h1>LivePoll</h1>
-      <h2><a href="http://live--poll.herokuapp.com">Live</a> | <a href="https://github.com/m1010j/LivePoll">GitHub</a></h2>
+      <h2><a href="http://www.livepoll.info/">Live</a> | <a href="https://github.com/m1010j/LivePoll">GitHub</a></h2>
       <img src="./img/livepoll.gif" class="project-gif" />
       A Poll Everywhere clone built with Rails, React, Redux, Pusher, and AWS.
     </p>
