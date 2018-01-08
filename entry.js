@@ -19,7 +19,7 @@ const contents = {
       <h2><a href="http://www.andor.fun/">Live</a> | <a href="https://github.com/m1010j/andor">GitHub</a></h2>
       <img src="./img/andor.gif" class="project-gif" />
       An original logic game that teaches players the rules of the Boolean connectives. Built with React and Redux.
-    </p><br />
+    </p><br /><br />
     <p>
       <h1>LivePoll</h1>
       <h2><a href="http://www.livepoll.info/">Live</a> | <a href="https://github.com/m1010j/LivePoll">GitHub</a></h2>

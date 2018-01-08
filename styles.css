@@ -96,6 +96,7 @@ p {
   background-color: transparent;
   z-index: 1;
   transition: opacity .5s ease-in-out, box-shadow .18s ease-out, font-weight .18s ease-out, color .18s ease-out, background-color .18s ease-out, font-size .18s ease-out;
+  border-radius: .3rem;
 }
 
 .navitem:hover {
