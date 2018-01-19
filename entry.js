@@ -16,9 +16,9 @@ const contents = {
   projects: `
     <p>
       <h1>Andor</h1>
-      <h2><a href="http://www.andor.fun/">Live</a> | <a href="https://github.com/m1010j/andor">GitHub</a></h2>
+      <h2><a href="http://www.andor.fun/">Browser</a> | <a href="https://play.google.com/store/apps/details?id=io.cordova.andor&hl=en">Google Play Store</a></h2>
       <img src="./img/andor.gif" class="project-gif" />
-      An original logic game that teaches players the rules of the Boolean connectives. Built with React and Redux.
+      An original logic game that teaches players the rules of the Boolean connectives. Built with React, Redux, and Cordova.
     </p><br /><br />
     <p>
       <h1>LivePoll</h1>
