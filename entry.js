@@ -16,7 +16,7 @@ const contents = {
   projects: `
     <p>
       <h1>Andor</h1>
-      <h2><a href="http://www.andor.fun/">Browser</a> | <a href="https://play.google.com/store/apps/details?id=io.cordova.andor&hl=en">Google Play Store</a></h2>
+      <h2><a href="http://www.andor.fun/">Browser</a> | <a href="https://play.google.com/store/apps/details?id=io.cordova.andor&hl=en">Google Play Store</a> | <a href="https://itunes.apple.com/us/app/andor-learn-logic/id1339495044">App Store</a></h2>
       <img src="./img/andor.gif" class="project-gif" />
       An original logic game that teaches players the rules of the Boolean connectives. Built with React, Redux, and Cordova.
     </p><br /><br />
@@ -42,7 +42,7 @@ const contents = {
     <p><a href="https://github.com/m1010j"><i class="fab fa-github"></i> github.com/m1010j</a></p>
     <p><a href="https://www.linkedin.com/in/m1010j/"><i class="fab fa-linkedin"></i> linkedin.com/in/m1010j</a></p>
 
-  `,
+  `
 };
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -50,18 +50,18 @@ document.addEventListener('DOMContentLoaded', function() {
   const navItems = Array.from(document.getElementsByClassName('navitem'));
   const content = document.getElementById('content');
   setTimeout(() => {
-    main.forEach((el) => el.setAttribute('style', 'opacity: .85'));
+    main.forEach(el => el.setAttribute('style', 'opacity: .85'));
     content.innerHTML = contents.home;
-  }, 100 );
+  }, 100);
 
-  navItems.forEach((navItem) => {
+  navItems.forEach(navItem => {
     navItem.addEventListener('click', toggleActive(navItems, content));
   });
 });
 
 const toggleActive = (navItems, content) => {
-  return (e) => {
-    navItems.forEach((navItem) => {
+  return e => {
+    navItems.forEach(navItem => {
       const type = navItem.innerText.toLowerCase();
       if (e.target === navItem) {
         navItem.classList.add(`${type}-active`);
