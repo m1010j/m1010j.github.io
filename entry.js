@@ -16,7 +16,7 @@ const contents = {
   projects: `
     <p>
       <h1>Andor</h1>
-      <h2><a href="http://www.andor.fun/">Browser</a> | <a href="https://play.google.com/store/apps/details?id=io.cordova.andor&hl=en">Google Play Store</a> | <a href="https://itunes.apple.com/us/app/andor-learn-logic/id1339495044">App Store</a></h2>
+      <h2><a href="http://www.andor.fun/">Browser</a> | <a href="https://play.google.com/store/apps/details?id=io.cordova.andor&hl=en">Google Play Store</a> | <a href="https://itunes.apple.com/us/app/andor-learn-logic/id1339495044">App Store</a> | <a href="https://www.amazon.com/dp/B079FM48R9/ref=sr_1_1?ie=UTF8&qid=1517356419">Amazon Appstore</a></h2>
       <img src="./img/andor.gif" class="project-gif" />
       An original logic game that teaches players the rules of the Boolean connectives. Built with React, Redux, and Cordova.
     </p><br /><br />
