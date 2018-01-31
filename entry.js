@@ -15,15 +15,24 @@ const contents = {
   `,
   projects: `
     <p>
-      <h1>Andor</h1>
-      <h2><a href="http://www.andor.fun/">Browser</a> | <a href="https://play.google.com/store/apps/details?id=io.cordova.andor&hl=en">Google Play Store</a> | <a href="https://itunes.apple.com/us/app/andor-learn-logic/id1339495044">Apple App Store</a> | <a href="https://www.amazon.com/dp/B079FM48R9/ref=sr_1_1?ie=UTF8&qid=1517356419">Amazon Appstore</a></h2>
-      <img src="./img/andor.gif" class="project-gif" />
-      An original logic game that teaches players the rules of the Boolean connectives. Built with React, Redux, and Cordova.
-    </p><br /><br />
+      <h1><a href="http://www.andor.fun/">Andor</a></h1>
+      <a href="http://www.andor.fun/"><img src="./img/andor.gif" class="project-gif" /></a>
+      An original logic game that teaches players the rules of the Boolean connectives. Built with React, Redux, and Cordova.<br />
+      <div class="play-links">
+        <a href='https://play.google.com/store/apps/details?id=io.cordova.andor' class="badge">
+          <img alt='Get Andor on Google Play' src='img/google.svg'/>
+        </a>
+        <a href='https://itunes.apple.com/us/app/andor-learn-logic/id1339495044' class="badge">
+          <img alt='Download Andor on the App Store' src='img/apple.svg'/>
+        </a>
+        <a href='https://www.amazon.com/dp/B079FM48R9/ref=sr_1_1?ie=UTF8&qid=1517356419' class="badge">
+          <img alt='Download Andor on the App Store' src='img/amazon.svg'/>
+        </a>
+      </div>
+    </p>
     <p>
-      <h1>LivePoll</h1>
-      <h2><a href="http://www.livepoll.info/">Live</a> | <a href="https://github.com/m1010j/LivePoll">GitHub</a></h2>
-      <img src="./img/livepoll.gif" class="project-gif" />
+      <h1><a href="http://www.livepoll.info/">LivePoll</a> <a href="https://github.com/m1010j/LivePoll"><i class="fab fa-github"></i></a></h1>
+      <a href="http://www.livepoll.info/"><img src="./img/livepoll.gif" class="project-gif" /></a>
       A Poll Everywhere clone built with Rails, React, Redux, Pusher, and AWS.
     </p>
   `,

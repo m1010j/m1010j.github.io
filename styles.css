@@ -1,5 +1,5 @@
 html {
-  font-size: 2vh;
+  font-size: 2em;
 }
 
 body {
@@ -180,4 +180,16 @@ h2 {
 iframe {
   width: 72.5vw;
   height: 95.85vw;
+}
+
+.badge img {
+  height: 2.5rem;
+  width: auto;
+}
+
+.badge {
+  padding: 0;
+  background-color: transparent;
+  line-height: 0;
+  border-radius: .6rem;
 }
