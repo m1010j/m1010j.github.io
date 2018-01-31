@@ -57,8 +57,8 @@ const contents = {
 };
 
 var root = null;
-var useHash = true; // Defaults to: false
-var hash = '#'; // Defaults to: '#'
+var useHash = true;
+var hash = '#';
 var router = new Navigo(root, useHash, hash);
 
 document.addEventListener('DOMContentLoaded', function() {
