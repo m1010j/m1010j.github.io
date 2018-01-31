@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const navItems = Array.from(document.getElementsByClassName('navitem'));
   const content = document.getElementById('content');
   setTimeout(() => {
-    main.forEach(el => el.setAttribute('style', 'opacity: .85'));
+    main.forEach(el => el.setAttribute('style', 'opacity: 1'));
     content.innerHTML = contents.home;
   }, 100);
 

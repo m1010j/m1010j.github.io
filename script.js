@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var content = document.getElementById('content');
   setTimeout(function () {
     main.forEach(function (el) {
-      return el.setAttribute('style', 'opacity: .85');
+      return el.setAttribute('style', 'opacity: 1');
     });
     content.innerHTML = contents.home;
   }, 100);
