@@ -92,7 +92,10 @@ document.addEventListener('DOMContentLoaded', function () {
   var main = Array.from(document.getElementsByTagName('main'));
   var navItems = Array.from(document.getElementsByClassName('navitem'));
   var content = document.getElementById('content');
-  var hash = window.location.hash.slice(1);
+  var hash = "home";
+  if (window.location.hash.length > 0) {
+    hash = window.location.hash.slice(1);
+  }
   setTimeout(function () {
     main.forEach(function (el) {
       return el.setAttribute('style', 'opacity: 1');

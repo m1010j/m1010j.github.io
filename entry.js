@@ -65,7 +65,10 @@ document.addEventListener('DOMContentLoaded', function() {
   const main = Array.from(document.getElementsByTagName('main'));
   const navItems = Array.from(document.getElementsByClassName('navitem'));
   const content = document.getElementById('content');
-  const hash = window.location.hash.slice(1);
+  let hash = "home";
+  if (window.location.hash.length > 0) {
+    hash = window.location.hash.slice(1);
+  }
   setTimeout(() => {
     main.forEach(el => el.setAttribute('style', 'opacity: 1'));
     content.innerHTML = contents[hash];
