@@ -1,3 +1,5 @@
+import Navigo from 'navigo';
+
 const contents = {
   home: `
     <p><img class="portrait" src="./img/matthias-jenny.png" />Hi, I'm Matthias Jenny, and I'm a full-stack web developer and teacher with a passion for logic. I'm based in New York City and I work at <a href="https://www.appacademy.io/">App Academy</a>. I also like <a href="https://500px.com/m1010j">photography</a>.<p>
@@ -54,19 +56,55 @@ const contents = {
   `
 };
 
+var root = null;
+var useHash = true; // Defaults to: false
+var hash = '#'; // Defaults to: '#'
+var router = new Navigo(root, useHash, hash);
+
 document.addEventListener('DOMContentLoaded', function() {
   const main = Array.from(document.getElementsByTagName('main'));
   const navItems = Array.from(document.getElementsByClassName('navitem'));
   const content = document.getElementById('content');
+  const hash = window.location.hash.slice(1);
   setTimeout(() => {
     main.forEach(el => el.setAttribute('style', 'opacity: 1'));
-    content.innerHTML = contents.home;
+    content.innerHTML = contents[hash];
   }, 100);
 
   navItems.forEach(navItem => {
     navItem.addEventListener('click', toggleActive(navItems, content));
+    const type = navItem.innerText.toLowerCase();
+    if (hash === type) {
+      navItem.classList.add(`${type}-active`);
+      navItem.classList.remove(type);
+      window.location = `#${type}`;
+    } else {
+      navItem.classList.remove(`${type}-active`);
+      navItem.classList.add(type);
+    }
   });
+
+  const navItemTexts = navItems.map(
+    (navItem) => {
+      return navItem.innerText.toLowerCase();
+    }
+  );
+
+  installRouter(navItemTexts, content);
 });
+
+const installRouter = (navItemTexts, content) => {
+  const routers = {};
+  navItemTexts.forEach(navItemText => {
+    routers[navItemText] = function () {
+      content.innerHTML = contents[navItemText];
+    };
+  });
+
+  router
+    .on(routers)
+    .resolve();
+};
 
 const toggleActive = (navItems, content) => {
   return e => {
@@ -75,7 +113,7 @@ const toggleActive = (navItems, content) => {
       if (e.target === navItem) {
         navItem.classList.add(`${type}-active`);
         navItem.classList.remove(type);
-        content.innerHTML = contents[type];
+        window.location = `#${type}`;
       } else {
         navItem.classList.remove(`${type}-active`);
         navItem.classList.add(type);
