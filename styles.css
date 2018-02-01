@@ -190,3 +190,11 @@ iframe {
   line-height: 0;
   border-radius: .6rem;
 }
+
+@media (orientation: portrait) {
+
+  main {
+    width: 90%;
+  }
+
+}
