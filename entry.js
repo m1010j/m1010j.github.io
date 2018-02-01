@@ -31,7 +31,7 @@ const contents = {
           <img alt='Download Andor on the App Store' src='img/amazon.svg'/>
         </a>
       </div>
-    </p>
+    </p><br />
     <p>
       <h1><a href="http://www.livepoll.info/">LivePoll</a> <a href="https://github.com/m1010j/LivePoll"><i class="fab fa-github"></i></a></h1>
       <a href="http://www.livepoll.info/"><img src="./img/livepoll.gif" class="project-gif" /></a>
