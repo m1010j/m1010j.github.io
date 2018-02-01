@@ -72,11 +72,13 @@ p {
   padding-left: 1rem;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
+  transition: filter .18s ease-in-out;
 }
 
 .icon:hover {
   -webkit-filter: none;
   filter: none;
+  transition: filter .18s ease-in-out;
 }
 
 .navitem {
