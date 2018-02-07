@@ -18,7 +18,7 @@ const contents = {
   projects: `
     <p>
       <h1><a href="http://www.andor.fun/">Andor</a></h1>
-      <a href="http://www.andor.fun/"><img src="./img/andor.gif" class="project-gif" /></a>
+      <a href="http://www.andor.fun/"><div class="andor-gif"></div></a>
       An original logic game that teaches players the rules of the Boolean connectives. Built with React, Redux, and Cordova.<br />
       <div class="play-links">
         <a href='https://play.google.com/store/apps/details?id=io.cordova.andor' class="badge">
@@ -34,7 +34,7 @@ const contents = {
     </p><br />
     <p>
       <h1><a href="http://www.livepoll.info/">LivePoll</a> <a href="https://github.com/m1010j/LivePoll"><i class="fab fa-github"></i></a></h1>
-      <a href="http://www.livepoll.info/"><img src="./img/livepoll.gif" class="project-gif" /></a>
+      <a href="http://www.livepoll.info/"><div class="livepoll-gif"></div></a>
       A Poll Everywhere clone built with Rails, React, Redux, Pusher, and AWS.
     </p>
   `,
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const main = Array.from(document.getElementsByTagName('main'));
   const navItems = Array.from(document.getElementsByClassName('navitem'));
   const content = document.getElementById('content');
-  let hash = "home";
+  let hash = 'home';
   if (window.location.hash.length > 0) {
     hash = window.location.hash.slice(1);
   }
@@ -87,11 +87,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-  const navItemTexts = navItems.map(
-    (navItem) => {
-      return navItem.innerText.toLowerCase();
-    }
-  );
+  const navItemTexts = navItems.map(navItem => {
+    return navItem.innerText.toLowerCase();
+  });
 
   installRouter(navItemTexts, content);
 });
@@ -99,14 +97,12 @@ document.addEventListener('DOMContentLoaded', function() {
 const installRouter = (navItemTexts, content) => {
   const routers = {};
   navItemTexts.forEach(navItemText => {
-    routers[navItemText] = function () {
+    routers[navItemText] = function() {
       content.innerHTML = contents[navItemText];
     };
   });
 
-  router
-    .on(routers)
-    .resolve();
+  router.on(routers).resolve();
 };
 
 const toggleActive = (navItems, content) => {
