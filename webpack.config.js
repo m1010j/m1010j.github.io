@@ -1,11 +1,11 @@
-const path = require("path");
+const path = require('path');
 
 module.exports = {
   context: __dirname,
   entry: './entry.js',
   output: {
     path: path.resolve(__dirname),
-    filename: 'script.js'
+    filename: 'script.js',
   },
   module: {
     loaders: [
@@ -14,13 +14,13 @@ module.exports = {
         exclude: /node_modules/,
         loader: 'babel-loader',
         query: {
-          presets: ['env', 'react']
-        }
-      }
-    ]
+          presets: ['env', 'react'],
+        },
+      },
+    ],
   },
   devtool: 'source-map',
   resolve: {
-    extensions: ['.js', '*']
-  }
+    extensions: ['.js', '*'],
+  },
 };

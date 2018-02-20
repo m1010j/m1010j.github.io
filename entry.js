@@ -53,7 +53,7 @@ const contents = {
     <p><a href="https://github.com/m1010j"><i class="fab fa-github"></i> github.com/m1010j</a></p>
     <p><a href="https://www.linkedin.com/in/m1010j/"><i class="fab fa-linkedin"></i> linkedin.com/in/m1010j</a></p>
 
-  `
+  `,
 };
 
 var root = null;
