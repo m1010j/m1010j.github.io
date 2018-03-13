@@ -16,7 +16,7 @@ const contents = {
     </p>
   `,
   projects: `
-    <div>
+    <div class="project-item">
       <h1><a href="http://www.andor.fun/">Andor</a></h1>
       <div class="project-item-detail">
         <a href="http://www.andor.fun/"><div class="andor-gif"></div></a>
@@ -36,7 +36,7 @@ const contents = {
         </div>
     </div>
     </div>
-    <div>
+    <div class="project-item">
       <h1><a href="https://github.com/m1010j/boolean-logic">boolean-logic</a> <a href="https://github.com/m1010j/boolean-logic"><i class="fab fa-github"></i></a> | <a href="https://www.npmjs.com/package/boolean-logic"><i class="fab fa-npm"></i></a></h1>
       <div class="project-item-detail">
         <a href="https://github.com/m1010j/boolean-logic"><div class="boolean-logic-png"></div></a>
@@ -45,7 +45,7 @@ const contents = {
         </div>
       </div>
     </div>
-    <div>
+    <div class="project-item">
       <h1><a href="http://www.livepoll.info/">LivePoll</a> <a href="https://github.com/m1010j/LivePoll"><i class="fab fa-github"></i></a></h1>
       <div class="project-item-detail">
         <a href="http://www.livepoll.info/"><div class="livepoll-gif"></div></a>
