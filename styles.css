@@ -182,11 +182,17 @@ h2 {
   font-size: 1.5rem;
 }
 
+.project-item-detail {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+}
+
 .andor-gif,
+.boolean-logic-png,
 .livepoll-gif {
   background-size: cover;
   background-position: center;
-  float: left;
   margin: 0.5rem 1rem 0 0;
   width: 18rem;
   border-radius: 0.3rem;
@@ -195,6 +201,11 @@ h2 {
 .andor-gif {
   background-image: url('./img/andor.gif');
   height: 8.5rem;
+}
+
+.boolean-logic-png {
+  background-image: url('./img/boolean-logic.png');
+  height: 8.623rem;
 }
 
 .livepoll-gif {

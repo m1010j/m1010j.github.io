@@ -16,27 +16,44 @@ const contents = {
     </p>
   `,
   projects: `
-    <p>
+    <div>
       <h1><a href="http://www.andor.fun/">Andor</a></h1>
-      <a href="http://www.andor.fun/"><div class="andor-gif"></div></a>
-      An original logic game that teaches players the rules of the Boolean connectives. Built with React, Redux, and Cordova.<br />
-      <div class="play-links">
-        <a href='https://play.google.com/store/apps/details?id=io.cordova.andor' class="badge">
-          <img alt='Get Andor on Google Play' src='img/google.svg'/>
-        </a>
-        <a href='https://itunes.apple.com/us/app/andor-learn-logic/id1339495044' class="badge">
-          <img alt='Download Andor on the App Store' src='img/apple.svg'/>
-        </a>
-        <a href='https://www.amazon.com/dp/B079FM48R9/ref=sr_1_1?ie=UTF8&qid=1517356419' class="badge">
-          <img alt='Download Andor on the App Store' src='img/amazon.svg'/>
-        </a>
+      <div class="project-item-detail">
+        <a href="http://www.andor.fun/"><div class="andor-gif"></div></a>
+        <div>
+          An original logic game that teaches players the rules of the Boolean connectives. Built with React, Redux, Cordova, and my boolean-logic library (see below).<br />
+          <div class="play-links">
+            <a href='https://play.google.com/store/apps/details?id=io.cordova.andor' class="badge">
+              <img alt='Get Andor on Google Play' src='img/google.svg'/>
+            </a>
+            <a href='https://itunes.apple.com/us/app/andor-learn-logic/id1339495044' class="badge">
+              <img alt='Download Andor on the App Store' src='img/apple.svg'/>
+            </a>
+            <a href='https://www.amazon.com/dp/B079FM48R9/ref=sr_1_1?ie=UTF8&qid=1517356419' class="badge">
+              <img alt='Download Andor on the App Store' src='img/amazon.svg'/>
+            </a>
+          </div>
+        </div>
+    </div>
+    </div>
+    <div>
+      <h1><a href="https://github.com/m1010j/boolean-logic">boolean-logic</a> <a href="https://github.com/m1010j/boolean-logic"><i class="fab fa-github"></i></a> | <a href="https://www.npmjs.com/package/boolean-logic"><i class="fab fa-npm"></i></a></h1>
+      <div class="project-item-detail">
+        <a href="https://github.com/m1010j/boolean-logic"><div class="boolean-logic-png"></div></a>
+        <div>
+          A lightweight JavaScript library for evaluating formulas of Boolean logic.
+        </div>
       </div>
-    </p><br />
-    <p>
+    </div>
+    <div>
       <h1><a href="http://www.livepoll.info/">LivePoll</a> <a href="https://github.com/m1010j/LivePoll"><i class="fab fa-github"></i></a></h1>
-      <a href="http://www.livepoll.info/"><div class="livepoll-gif"></div></a>
-      A Poll Everywhere clone built with Rails, React, Redux, Pusher, and AWS.
-    </p>
+      <div class="project-item-detail">
+        <a href="http://www.livepoll.info/"><div class="livepoll-gif"></div></a>
+        <div>
+          A Poll Everywhere clone built with Rails, React, Redux, Pusher, and AWS.
+        </div>
+      </div>
+    </div>
   `,
   resume: `
   <p><a href="./Matthias_Jenny_Resume.pdf"><i class="fa fa-download" aria-hidden="true"></i> Download resume</a></p>
