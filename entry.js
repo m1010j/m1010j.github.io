@@ -58,11 +58,8 @@ const contents = {
   resume: `
   <p><a href="./Matthias_Jenny_Resume.pdf"><i class="fa fa-download" aria-hidden="true"></i> Download resume</a></p>
   <center><iframe
-  src="https://docs.google.com/presentation/d/e/2PACX-1vSvbIgZ_s_z-P2f-WrCXbGA4-nrTgCfU6Zr7ozlHnoViAZ92P2syQZyh22_ZTlmtW2dCbyRHFdcNotw/embed?start=false&loop=false&delayms=1000"
-  frameborder="0"
-  allowfullscreen="true"
-  mozallowfullscreen="true"
-  webkitallowfullscreen="true">
+  src="https://resume.creddle.io/embed/9enh1yicxr0"
+  seamless>
   </iframe></center>
   `,
   contact: `
