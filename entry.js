@@ -56,11 +56,9 @@ const contents = {
     </div>
   `,
   resume: `
-  <p><a href="./Matthias_Jenny_Resume.pdf"><i class="fa fa-download" aria-hidden="true"></i> Download resume</a></p>
-  <center><iframe
-  src="https://resume.creddle.io/embed/9enh1yicxr0"
-  seamless>
-  </iframe></center>
+  <div class="resume"><p><a href="./Matthias_Jenny_Resume.pdf"><i class="fa fa-download" aria-hidden="true"></i> Download resume</a></p>
+  <center><iframe src="https://resume.creddle.io/embed/9enh1yicxr0" width="850" height="1100" seamless></iframe>
+  </iframe></center></div>
   `,
   contact: `
     <p><a href="mailto:matthiascjenny@gmail.com"><i class="fas fa-envelope"></i> matthiascjenny@gmail.com</a></p>

@@ -226,11 +226,6 @@ h2 {
   height: 11.3625rem;
 }
 
-iframe {
-  width: 72.5vw;
-  height: 95.85vw;
-}
-
 .badge img {
   height: 2.5rem;
   width: auto;
@@ -241,6 +236,13 @@ iframe {
   background-color: transparent;
   line-height: 0;
   border-radius: 0.6rem;
+}
+
+.resume {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (orientation: portrait) {
