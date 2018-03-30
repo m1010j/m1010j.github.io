@@ -245,8 +245,22 @@ h2 {
   align-items: center;
 }
 
+iframe {
+  margin: auto;
+  width: 75%;
+  height: 59vh;
+  border-radius: 0.3rem;
+  box-shadow: 0 0 0.1rem rgba(0, 0, 0, 0.16),
+    0 0.1rem 0.2rem rgba(0, 0, 0, 0.32);
+}
+
 @media (orientation: portrait) {
   main {
     width: 90%;
+  }
+
+  iframe {
+    width: calc(59vh * 0.77);
+    height: 59vh;
   }
 }
