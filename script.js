@@ -110,6 +110,9 @@ document.addEventListener('DOMContentLoaded', function () {
       navItem.classList.add(type + '-active');
       navItem.classList.remove(type);
       window.location = '#' + type;
+      if (type === 'resume') {
+        asyncResizeResume();
+      }
     } else {
       navItem.classList.remove(type + '-active');
       navItem.classList.add(type);
@@ -123,6 +126,8 @@ document.addEventListener('DOMContentLoaded', function () {
   installRouter(navItemTexts, content);
 });
 
+window.addEventListener('resize', resizeResume);
+
 var installRouter = function installRouter(navItemTexts, content) {
   var routers = {};
   navItemTexts.forEach(function (navItemText) {
@@ -134,6 +139,30 @@ var installRouter = function installRouter(navItemTexts, content) {
   router.on(routers).resolve();
 };
 
+function resizeResume() {
+  var width = window.innerWidth;
+  var iframe = document.getElementsByTagName('iframe')[0];
+  iframe.style.width = Math.floor(0.5 * width) + 'px';
+  iframe.style.height = Math.floor(0.5 * width * 10.85 / 8) + 'px';
+  var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+  var innerHtml = innerDoc.getElementsByTagName('html')[0];
+  innerHtml.style.fontSize = width / 1650 + 'em';
+}
+
+function asyncResizeResume() {
+  var iframe = document.getElementsByTagName('iframe')[0];
+  if (!iframe) {
+    setTimeout(asyncResizeResume, 10);
+  } else {
+    var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+    if (innerDoc.readyState === 'complete') {
+      resizeResume();
+    } else {
+      setTimeout(asyncResizeResume, 10);
+    }
+  }
+}
+
 var toggleActive = function toggleActive(navItems, content) {
   return function (e) {
     navItems.forEach(function (navItem) {
@@ -142,6 +171,9 @@ var toggleActive = function toggleActive(navItems, content) {
         navItem.classList.add(type + '-active');
         navItem.classList.remove(type);
         window.location = '#' + type;
+        if (type === 'resume') {
+          asyncResizeResume();
+        }
       } else {
         navItem.classList.remove(type + '-active');
         navItem.classList.add(type);

@@ -94,6 +94,9 @@ document.addEventListener('DOMContentLoaded', function() {
       navItem.classList.add(`${type}-active`);
       navItem.classList.remove(type);
       window.location = `#${type}`;
+      if (type === 'resume') {
+        asyncResizeResume();
+      }
     } else {
       navItem.classList.remove(`${type}-active`);
       navItem.classList.add(type);
@@ -107,6 +110,8 @@ document.addEventListener('DOMContentLoaded', function() {
   installRouter(navItemTexts, content);
 });
 
+window.addEventListener('resize', resizeResume);
+
 const installRouter = (navItemTexts, content) => {
   const routers = {};
   navItemTexts.forEach(navItemText => {
@@ -118,6 +123,30 @@ const installRouter = (navItemTexts, content) => {
   router.on(routers).resolve();
 };
 
+function resizeResume() {
+  const width = window.innerWidth;
+  const iframe = document.getElementsByTagName('iframe')[0];
+  iframe.style.width = `${Math.floor(0.5 * width)}px`;
+  iframe.style.height = `${Math.floor(0.5 * width * 10.85 / 8)}px`;
+  const innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+  const innerHtml = innerDoc.getElementsByTagName('html')[0];
+  innerHtml.style.fontSize = `${width / 1650}em`;
+}
+
+function asyncResizeResume() {
+  const iframe = document.getElementsByTagName('iframe')[0];
+  if (!iframe) {
+    setTimeout(asyncResizeResume, 10);
+  } else {
+    const innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+    if (innerDoc.readyState === 'complete') {
+      resizeResume();
+    } else {
+      setTimeout(asyncResizeResume, 10);
+    }
+  }
+}
+
 const toggleActive = (navItems, content) => {
   return e => {
     navItems.forEach(navItem => {
@@ -126,6 +155,9 @@ const toggleActive = (navItems, content) => {
         navItem.classList.add(`${type}-active`);
         navItem.classList.remove(type);
         window.location = `#${type}`;
+        if (type === 'resume') {
+          asyncResizeResume();
+        }
       } else {
         navItem.classList.remove(`${type}-active`);
         navItem.classList.add(type);
