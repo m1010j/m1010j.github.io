@@ -147,7 +147,7 @@ function resizeResume() {
   var innerHtml = innerDoc.getElementsByTagName('html')[0];
   var openResume = document.getElementById('open-resume');
   var iframeContainer = document.getElementsByClassName('iframe-container')[0];
-  if (!iframe || !innerDoc || !innerHtml || !iframeContainer || !openResume) {
+  if (!iframe || !innerDoc || !innerHtml || !openResume || !iframeContainer) {
     setTimeout(resizeResume, 100);
   } else {
     var multiplier = void 0;

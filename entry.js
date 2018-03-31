@@ -136,7 +136,7 @@ function resizeResume() {
   const iframeContainer = document.getElementsByClassName(
     'iframe-container'
   )[0];
-  if (!iframe || !innerDoc || !innerHtml || !iframeContainer || !openResume) {
+  if (!iframe || !innerDoc || !innerHtml || !openResume || !iframeContainer) {
     setTimeout(resizeResume, 100);
   } else {
     let multiplier;
