@@ -79,7 +79,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var contents = {
   home: '\n    <p><img class="portrait" src="./img/matthias-jenny.png" />Hi, I\'m Matthias Jenny, and I\'m a full-stack web developer and teacher with a passion for logic. I\'m based in New York City and I work at <a href="https://www.appacademy.io/">App Academy</a>. I also like <a href="https://500px.com/m1010j">photography</a>.<p>\n    <p>Favorite technologies:</p>\n    <p>\n      <center>\n        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img class="icon" src="./icons/javascript.png" /></a>\n        <a href="https://github.com/facebook/react"><img class="icon" src="./icons/react.png" /></a>\n        <a href="https://www.ruby-lang.org/en/"><img class="icon" src="./icons/ruby.png" /></a>\n        <a href="http://rubyonrails.org/"><img class="icon" src="./icons/rails.png" /></a>\n        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><img class="icon" src="./icons/html5.png" /></a>\n        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img class="icon" src="./icons/css3.png" /></a>\n      </center>\n    </p>\n  ',
   projects: '\n    <div class="project-item">\n      <h1><a href="http://www.andor.fun/">Andor</a></h1>\n      <div class="project-item-detail">\n        <a href="http://www.andor.fun/"><div class="andor-gif"></div></a>\n        <div>\n          An original logic game that teaches players the rules of the Boolean connectives. Built with React, Redux, Cordova, and my boolean-logic library (see below).<br />\n          <div class="play-links">\n            <a href=\'https://play.google.com/store/apps/details?id=io.cordova.andor\' class="badge">\n              <img alt=\'Get Andor on Google Play\' src=\'img/google.svg\'/>\n            </a>\n            <a href=\'https://itunes.apple.com/us/app/andor-learn-logic/id1339495044\' class="badge">\n              <img alt=\'Download Andor on the App Store\' src=\'img/apple.svg\'/>\n            </a>\n            <a href=\'https://www.amazon.com/dp/B079FM48R9/ref=sr_1_1?ie=UTF8&qid=1517356419\' class="badge">\n              <img alt=\'Download Andor on the App Store\' src=\'img/amazon.svg\'/>\n            </a>\n          </div>\n        </div>\n    </div>\n    </div>\n    <div class="project-item">\n      <h1><a href="https://github.com/m1010j/boolean-logic">boolean-logic</a> <a href="https://github.com/m1010j/boolean-logic"><i class="fab fa-github"></i></a> | <a href="https://www.npmjs.com/package/boolean-logic"><i class="fab fa-npm"></i></a></h1>\n      <div class="project-item-detail">\n        <a href="https://github.com/m1010j/boolean-logic"><div class="boolean-logic-png"></div></a>\n        <div>\n          A lightweight JavaScript library for evaluating formulas of Boolean logic.\n        </div>\n      </div>\n    </div>\n    <div class="project-item">\n      <h1><a href="http://www.livepoll.info/">LivePoll</a> <a href="https://github.com/m1010j/LivePoll"><i class="fab fa-github"></i></a></h1>\n      <div class="project-item-detail">\n        <a href="http://www.livepoll.info/"><div class="livepoll-gif"></div></a>\n        <div>\n          A Poll Everywhere clone built with Rails, React, Redux, Pusher, and AWS.\n        </div>\n      </div>\n    </div>\n  ',
-  resume: '\n  <div class="resume"><p><a href="./Matthias_Jenny_Resume.pdf"><i class="fa fa-download" aria-hidden="true"></i> Download resume</a></p>\n    <iframe src="./resume/index.html"></iframe>\n  </div>\n  ',
+  resume: '\n  <div class="resume">\n    <div class="iframe-container">\n      <a href="./Matthias_Jenny_Resume.pdf" target="_blank" id="open-resume"><i class="fas fa-external-link-alt"></i></a>\n      <iframe src="' + location.origin + '/resume/index.html"></iframe>\n    </div>\n  </div>\n  ',
   contact: '\n    <p><a href="mailto:matthiascjenny@gmail.com"><i class="fas fa-envelope"></i> matthiascjenny@gmail.com</a></p>\n    <p><a href="https://github.com/m1010j"><i class="fab fa-github"></i> github.com/m1010j</a></p>\n    <p><a href="https://www.linkedin.com/in/m1010j/"><i class="fab fa-linkedin"></i> linkedin.com/in/m1010j</a></p>\n    <p><a href="https://twitter.com/_m1010j_"><i class="fab fa-twitter"></i> twitter.com/_m1010j_</a></p>\n\n  '
 };
 
@@ -101,6 +101,9 @@ document.addEventListener('DOMContentLoaded', function () {
       return el.setAttribute('style', 'opacity: 1');
     });
     content.innerHTML = contents[hash];
+    if (hash === 'resume') {
+      setTimeout(resizeResume, 300);
+    }
   }, 100);
 
   navItems.forEach(function (navItem) {
@@ -110,9 +113,6 @@ document.addEventListener('DOMContentLoaded', function () {
       navItem.classList.add(type + '-active');
       navItem.classList.remove(type);
       window.location = '#' + type;
-      if (type === 'resume') {
-        asyncResizeResume();
-      }
     } else {
       navItem.classList.remove(type + '-active');
       navItem.classList.add(type);
@@ -141,25 +141,28 @@ var installRouter = function installRouter(navItemTexts, content) {
 
 function resizeResume() {
   var width = window.innerWidth;
+  var height = window.innerHeight;
   var iframe = document.getElementsByTagName('iframe')[0];
-  iframe.style.width = Math.floor(0.5 * width) + 'px';
-  iframe.style.height = Math.floor(0.5 * width * 10.85 / 8) + 'px';
   var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
   var innerHtml = innerDoc.getElementsByTagName('html')[0];
-  innerHtml.style.fontSize = width / 1650 + 'em';
-}
-
-function asyncResizeResume() {
-  var iframe = document.getElementsByTagName('iframe')[0];
-  if (!iframe) {
-    setTimeout(asyncResizeResume, 10);
+  var openResume = document.getElementById('open-resume');
+  var iframeContainer = document.getElementsByClassName('iframe-container')[0];
+  if (!iframe || !innerDoc || !innerHtml || !openResume || !iframeContainer) {
+    setTimeout(resizeResume, 100);
   } else {
-    var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
-    if (innerDoc.readyState === 'complete') {
-      resizeResume();
+    var multiplier = void 0;
+    var factor = void 0;
+    if (width >= height) {
+      multiplier = 0.5;
+      factor = 1684;
     } else {
-      setTimeout(asyncResizeResume, 10);
+      multiplier = 0.75;
+      factor = 1115;
     }
+    iframeContainer.style.opacity = 1;
+    iframe.style.width = Math.floor(multiplier * width) + 'px';
+    iframe.style.height = Math.floor(multiplier * width * 10.41 / 8) + 'px';
+    innerHtml.style.fontSize = width / factor + 'em';
   }
 }
 
@@ -172,7 +175,7 @@ var toggleActive = function toggleActive(navItems, content) {
         navItem.classList.remove(type);
         window.location = '#' + type;
         if (type === 'resume') {
-          asyncResizeResume();
+          setTimeout(resizeResume, 500);
         }
       } else {
         navItem.classList.remove(type + '-active');
@@ -181,8 +184,6 @@ var toggleActive = function toggleActive(navItems, content) {
     });
   };
 };
-// width="100%"
-// height="100%"
 
 /***/ }),
 /* 1 */

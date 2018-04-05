@@ -56,8 +56,11 @@ const contents = {
     </div>
   `,
   resume: `
-  <div class="resume"><p><a href="./Matthias_Jenny_Resume.pdf"><i class="fa fa-download" aria-hidden="true"></i> Download resume</a></p>
-    <iframe src="./resume/index.html"></iframe>
+  <div class="resume">
+    <div class="iframe-container">
+      <a href="./Matthias_Jenny_Resume.pdf" target="_blank" id="open-resume"><i class="fas fa-external-link-alt"></i></a>
+      <iframe src="${location.origin}/resume/index.html"></iframe>
+    </div>
   </div>
   `,
   contact: `
@@ -85,6 +88,9 @@ document.addEventListener('DOMContentLoaded', function() {
   setTimeout(() => {
     main.forEach(el => el.setAttribute('style', 'opacity: 1'));
     content.innerHTML = contents[hash];
+    if (hash === 'resume') {
+      setTimeout(resizeResume, 300);
+    }
   }, 100);
 
   navItems.forEach(navItem => {
@@ -94,9 +100,6 @@ document.addEventListener('DOMContentLoaded', function() {
       navItem.classList.add(`${type}-active`);
       navItem.classList.remove(type);
       window.location = `#${type}`;
-      if (type === 'resume') {
-        asyncResizeResume();
-      }
     } else {
       navItem.classList.remove(`${type}-active`);
       navItem.classList.add(type);
@@ -125,25 +128,30 @@ const installRouter = (navItemTexts, content) => {
 
 function resizeResume() {
   const width = window.innerWidth;
+  const height = window.innerHeight;
   const iframe = document.getElementsByTagName('iframe')[0];
-  iframe.style.width = `${Math.floor(0.5 * width)}px`;
-  iframe.style.height = `${Math.floor(0.5 * width * 10.85 / 8)}px`;
   const innerDoc = iframe.contentDocument || iframe.contentWindow.document;
   const innerHtml = innerDoc.getElementsByTagName('html')[0];
-  innerHtml.style.fontSize = `${width / 1650}em`;
-}
-
-function asyncResizeResume() {
-  const iframe = document.getElementsByTagName('iframe')[0];
-  if (!iframe) {
-    setTimeout(asyncResizeResume, 10);
+  const openResume = document.getElementById('open-resume');
+  const iframeContainer = document.getElementsByClassName(
+    'iframe-container'
+  )[0];
+  if (!iframe || !innerDoc || !innerHtml || !openResume || !iframeContainer) {
+    setTimeout(resizeResume, 100);
   } else {
-    const innerDoc = iframe.contentDocument || iframe.contentWindow.document;
-    if (innerDoc.readyState === 'complete') {
-      resizeResume();
+    let multiplier;
+    let factor;
+    if (width >= height) {
+      multiplier = 0.5;
+      factor = 1684;
     } else {
-      setTimeout(asyncResizeResume, 10);
+      multiplier = 0.75;
+      factor = 1115;
     }
+    iframeContainer.style.opacity = 1;
+    iframe.style.width = `${Math.floor(multiplier * width)}px`;
+    iframe.style.height = `${Math.floor(multiplier * width * 10.41 / 8)}px`;
+    innerHtml.style.fontSize = `${width / factor}em`;
   }
 }
 
@@ -156,7 +164,7 @@ const toggleActive = (navItems, content) => {
         navItem.classList.remove(type);
         window.location = `#${type}`;
         if (type === 'resume') {
-          asyncResizeResume();
+          setTimeout(resizeResume, 500);
         }
       } else {
         navItem.classList.remove(`${type}-active`);
@@ -165,5 +173,3 @@ const toggleActive = (navItems, content) => {
     });
   };
 };
-// width="100%"
-// height="100%"
