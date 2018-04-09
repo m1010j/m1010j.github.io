@@ -287,6 +287,7 @@ iframe body {
 @media (orientation: portrait) {
   main {
     width: 90%;
+    height: 80vh;
   }
 
   iframe {
@@ -333,5 +334,9 @@ iframe body {
 
   .navitem {
     letter-spacing: 0.1rem;
+  }
+
+  .contact-content {
+    height: 66vh;
   }
 }
