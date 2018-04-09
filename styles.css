@@ -35,7 +35,7 @@ main {
   margin: 10vh auto;
   display: grid;
   grid-template-columns: 25fr 25fr 25fr 25fr;
-  grid-template-rows: 3rem 100fr;
+  grid-template-rows: 3rem 0.1rem 100fr;
   overflow-x: auto;
   border-radius: 0.3rem;
   box-shadow: 0 1.2rem 3rem 0 rgba(0, 0, 0, 0.19),
@@ -199,8 +199,15 @@ p {
     color 0.18s ease-out, background-color 0.18s ease-out;
 }
 
-#content {
+#box-shadow {
   grid-row-start: 2;
+  grid-column-start: 1;
+  grid-column-end: span 4;
+  z-index: 10;
+}
+
+#content {
+  grid-row-start: 3;
   grid-column-start: 1;
   grid-column-end: span 4;
   font-family: 'Barlow', sans-serif;

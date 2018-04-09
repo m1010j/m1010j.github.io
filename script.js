@@ -91,6 +91,7 @@ var router = new _navigo2.default(root, useHash, hash);
 document.addEventListener('DOMContentLoaded', function () {
   var main = Array.from(document.getElementsByTagName('main'));
   var navItems = Array.from(document.getElementsByClassName('navitem'));
+  var boxShadow = document.getElementById('box-shadow');
   var content = document.getElementById('content');
   var hash = 'home';
   if (window.location.hash.length > 0) {
@@ -124,6 +125,14 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   installRouter(navItemTexts, content);
+
+  content.addEventListener('scroll', function () {
+    if (content.scrollTop > 0) {
+      boxShadow.style.boxShadow = '0 0 0 rgba(0, 0, 0, 0.16), 0 0.1rem 0.1rem rgba(0, 0, 0, 0.32)';
+    } else {
+      boxShadow.style.boxShadow = 'none';
+    }
+  });
 });
 
 window.addEventListener('resize', resizeResume);

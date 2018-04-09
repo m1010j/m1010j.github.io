@@ -90,6 +90,7 @@ var router = new Navigo(root, useHash, hash);
 document.addEventListener('DOMContentLoaded', function() {
   const main = Array.from(document.getElementsByTagName('main'));
   const navItems = Array.from(document.getElementsByClassName('navitem'));
+  const boxShadow = document.getElementById('box-shadow');
   const content = document.getElementById('content');
   let hash = 'home';
   if (window.location.hash.length > 0) {
@@ -121,6 +122,15 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   installRouter(navItemTexts, content);
+
+  content.addEventListener('scroll', () => {
+    if (content.scrollTop > 0) {
+      boxShadow.style.boxShadow =
+        '0 0 0 rgba(0, 0, 0, 0.16), 0 0.1rem 0.1rem rgba(0, 0, 0, 0.32)';
+    } else {
+      boxShadow.style.boxShadow = 'none';
+    }
+  });
 });
 
 window.addEventListener('resize', resizeResume);
