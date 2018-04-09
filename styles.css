@@ -43,6 +43,11 @@ main {
   transition: opacity 1s ease-in-out;
 }
 
+.home-content {
+  display: flex;
+  flex-direction: row;
+}
+
 a {
   font-weight: 700;
   color: black;
@@ -62,7 +67,6 @@ p {
 
 .portrait {
   height: 12rem;
-  float: left;
   width: auto;
   border-radius: 100%;
   margin: 0.5rem 1rem 0 0;
@@ -272,6 +276,14 @@ iframe body {
   font-size: 0.5em;
 }
 
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
 @media (orientation: portrait) {
   main {
     width: 90%;
@@ -280,5 +292,46 @@ iframe body {
   iframe {
     width: calc(59vh * 0.77);
     height: 59vh;
+  }
+
+  .home-content,
+  .project-item-detail {
+    flex-direction: column;
+  }
+
+  .portrait,
+  .play-links {
+    margin: auto;
+  }
+
+  .play-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .badge {
+    margin: 0.1rem;
+  }
+
+  .project-item > h1 {
+    text-align: center;
+    padding: 0 0 0.5rem 0;
+  }
+
+  .andor-gif,
+  .boolean-logic-png,
+  .livepoll-gif {
+    margin: auto;
+    padding: 0 0 0.5rem 0;
+  }
+
+  .andor-gif {
+    height: 8.05rem;
+  }
+
+  .navitem {
+    letter-spacing: 0.1rem;
   }
 }

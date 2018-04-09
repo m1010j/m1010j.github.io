@@ -2,18 +2,23 @@ import Navigo from 'navigo';
 
 const contents = {
   home: `
-    <p><img class="portrait" src="./img/matthias-jenny.png" />Hi, I'm Matthias Jenny, and I'm a full-stack web developer and teacher with a passion for logic. I'm based in New York City and I work at <a href="https://www.appacademy.io/">App Academy</a>. I also like <a href="https://500px.com/m1010j">photography</a>.<p>
-    <p>Favorite technologies:</p>
-    <p>
-      <center>
-        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img class="icon" src="./icons/javascript.png" /></a>
-        <a href="https://github.com/facebook/react"><img class="icon" src="./icons/react.png" /></a>
-        <a href="https://www.ruby-lang.org/en/"><img class="icon" src="./icons/ruby.png" /></a>
-        <a href="http://rubyonrails.org/"><img class="icon" src="./icons/rails.png" /></a>
-        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><img class="icon" src="./icons/html5.png" /></a>
-        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img class="icon" src="./icons/css3.png" /></a>
-      </center>
-    </p>
+    <div class="home-content">
+      <img class="portrait" src="./img/matthias-jenny.png" />
+      <div>
+        <p>Hi, I'm Matthias Jenny, and I'm a full-stack web developer and teacher with a passion for logic. I'm based in New York City and I work at <a href="https://www.appacademy.io/">App Academy</a>. I also like <a href="https://500px.com/m1010j">photography</a>.<p>
+        <p>Favorite technologies:</p>
+        <p>
+          <center>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img class="icon" src="./icons/javascript.png" /></a>
+            <a href="https://github.com/facebook/react"><img class="icon" src="./icons/react.png" /></a>
+            <a href="https://www.ruby-lang.org/en/"><img class="icon" src="./icons/ruby.png" /></a>
+            <a href="http://rubyonrails.org/"><img class="icon" src="./icons/rails.png" /></a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><img class="icon" src="./icons/html5.png" /></a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img class="icon" src="./icons/css3.png" /></a>
+          </center>
+        </p>
+      </div>
+    </div>
   `,
   projects: `
     <div class="project-item">
@@ -64,11 +69,13 @@ const contents = {
   </div>
   `,
   contact: `
-    <p><a href="mailto:matthiascjenny@gmail.com"><i class="fas fa-envelope"></i> matthiascjenny@gmail.com</a></p>
-    <p><a href="https://github.com/m1010j"><i class="fab fa-github"></i> github.com/m1010j</a></p>
-    <p><a href="https://www.linkedin.com/in/m1010j/"><i class="fab fa-linkedin"></i> linkedin.com/in/m1010j</a></p>
-    <p><a href="https://twitter.com/_m1010j_"><i class="fab fa-twitter"></i> twitter.com/_m1010j_</a></p>
-
+    <div class="contact-content">
+      <p><a href="mailto:matthiascjenny@gmail.com"><i class="fas fa-envelope"></i> matthiascjenny@gmail.com</a></p>
+      <p><a href="https://github.com/m1010j"><i class="fab fa-github"></i> github.com/m1010j</a></p>
+      <p><a href="https://twitter.com/_m1010j_"><i class="fab fa-twitter"></i> twitter.com/_m1010j_</a></p>
+      <p><a href="https://www.linkedin.com/in/m1010j/"><i class="fab fa-linkedin"></i> linkedin.com/in/m1010j</a></p>
+      <p><a href="https://angel.co/m1010j"><i class="fab fa-angellist"></i> angel.co/m1010j</a></p>
+    </div>
   `,
 };
 
