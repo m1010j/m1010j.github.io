@@ -43,9 +43,31 @@ main {
   transition: opacity 1s ease-in-out;
 }
 
-.home-content {
+.home-content > div {
   display: flex;
   flex-direction: row;
+}
+
+.home-content > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.home-technologies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-technologies-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
 }
 
 a {
@@ -66,24 +88,26 @@ p {
 }
 
 .portrait {
-  height: 12rem;
+  height: 15rem;
   width: auto;
   border-radius: 100%;
-  margin: 0.5rem 1rem 0 0;
+  margin: 0.5rem 1rem 0.5rem 0;
 }
 
 .icon {
   height: 3rem;
   padding-left: 1rem;
+
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
-  transition: filter 0.18s ease-in-out;
+  transition: filter 0.18s ease-in-out, height 0.18s ease-in-out;
 }
 
 .icon:hover {
   -webkit-filter: none;
+  height: 5rem;
   filter: none;
-  transition: filter 0.18s ease-in-out;
+  transition: filter 0.18s ease-in-out, height 0.18s ease-in-out;
 }
 
 .navitem {
@@ -287,7 +311,7 @@ iframe body {
 @media (orientation: portrait) {
   main {
     width: 90%;
-    height: 80vh;
+    min-height: 75vh;
   }
 
   iframe {
@@ -295,7 +319,7 @@ iframe body {
     height: 59vh;
   }
 
-  .home-content,
+  .home-content > div,
   .project-item-detail {
     flex-direction: column;
   }
