@@ -130,6 +130,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 window.addEventListener('resize', resizeResume);
 
+window.addEventListener('orientationchange', setFontSize);
+
 var installRouter = function installRouter(navItemTexts, content) {
   var routers = {};
   navItemTexts.forEach(function (navItemText) {
@@ -142,7 +144,6 @@ var installRouter = function installRouter(navItemTexts, content) {
 };
 
 function resizeResume() {
-  setFontSize();
   var width = window.innerWidth;
   var height = window.innerHeight;
   var iframe = document.getElementsByTagName('iframe')[0];

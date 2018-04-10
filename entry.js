@@ -128,6 +128,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 window.addEventListener('resize', resizeResume);
 
+window.addEventListener('orientationchange', setFontSize);
+
 const installRouter = (navItemTexts, content) => {
   const routers = {};
   navItemTexts.forEach(navItemText => {
@@ -140,7 +142,6 @@ const installRouter = (navItemTexts, content) => {
 };
 
 function resizeResume() {
-  setFontSize();
   const width = window.innerWidth;
   const height = window.innerHeight;
   const iframe = document.getElementsByTagName('iframe')[0];
