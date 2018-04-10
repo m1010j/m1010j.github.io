@@ -22,6 +22,7 @@ const contents = {
           <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img class="icon" src="./icons/css3.png" /></a>
         </div>
       </div>
+    </div>    
   `,
   projects: `
     <div class="project-item">
