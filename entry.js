@@ -3,22 +3,25 @@ import Navigo from 'navigo';
 const contents = {
   home: `
     <div class="home-content">
-      <img class="portrait" src="./img/matthias-jenny.png" />
-      <div>
-        <p>Hi, I'm Matthias Jenny, and I'm a full-stack web developer and teacher with a passion for logic. I'm based in New York City and I work at <a href="https://www.appacademy.io/">App Academy</a>. I also like <a href="https://500px.com/m1010j">photography</a>.<p>
-        <p>Favorite technologies:</p>
-        <p>
-          <center>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img class="icon" src="./icons/javascript.png" /></a>
-            <a href="https://github.com/facebook/react"><img class="icon" src="./icons/react.png" /></a>
-            <a href="https://www.ruby-lang.org/en/"><img class="icon" src="./icons/ruby.png" /></a>
-            <a href="http://rubyonrails.org/"><img class="icon" src="./icons/rails.png" /></a>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><img class="icon" src="./icons/html5.png" /></a>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img class="icon" src="./icons/css3.png" /></a>
-          </center>
-        </p>
+        <div>
+          <img class="portrait" src="./img/matthias-jenny.png" />
+          <div>
+            <p>Hi, I'm Matthias Jenny, and I'm a full-stack web developer and teacher with a passion for logic. After writing a <a href="http://dspace.mit.edu/handle/1721.1/113731" target="_blank">PhD thesis</a> on computability theory, conditionals, and non-classical logic at MIT, I am now based in New York City, where I work at <a href="https://www.appacademy.io/">App Academy</a>. I get equally excited about writing sophisticated and efficient algorithms as I do about developing beautiful and responsive user interfaces.</p>
+            <p>In addition to writing software, I also like <a href="https://500px.com/m1010j">taking photos</a>.<p>
+          </div>
+        </div>
       </div>
-    </div>
+    <div class="home-technologies">
+        <p>Favorite technologies:</p>
+        <div class="home-technologies-icons">
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img class="icon" src="./icons/javascript.png" /></a>
+          <a href="https://github.com/facebook/react"><img class="icon" src="./icons/react.png" /></a>
+          <a href="https://www.ruby-lang.org/en/"><img class="icon" src="./icons/ruby.png" /></a>
+          <a href="http://rubyonrails.org/"><img class="icon" src="./icons/rails.png" /></a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><img class="icon" src="./icons/html5.png" /></a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img class="icon" src="./icons/css3.png" /></a>
+        </div>
+      </div>
   `,
   projects: `
     <div class="project-item">

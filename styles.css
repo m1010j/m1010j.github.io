@@ -48,6 +48,16 @@ main {
   flex-direction: row;
 }
 
+.home-content > div {
+  display: flex;
+}
+
+.home-technologies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 a {
   font-weight: 700;
   color: black;
@@ -66,7 +76,8 @@ p {
 }
 
 .portrait {
-  height: 12rem;
+  height: 30vw;
+  max-height: 12rem;
   width: auto;
   border-radius: 100%;
   margin: 0.5rem 1rem 0 0;
@@ -281,7 +292,6 @@ iframe body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100%;
 }
 
 @media (orientation: portrait) {
@@ -294,9 +304,17 @@ iframe body {
     height: 59vh;
   }
 
-  .home-content,
+  .home-content > div,
   .project-item-detail {
     flex-direction: column;
+  }
+
+  .portrait {
+    height: 40vw;
+    max-height: 15rem;
+    width: auto;
+    border-radius: 100%;
+    margin: 0.5rem 1rem 0 0;
   }
 
   .portrait,
