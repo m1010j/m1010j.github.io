@@ -142,6 +142,7 @@ const installRouter = (navItemTexts, content) => {
 };
 
 function resizeResume() {
+  setFontSize();
   const width = window.innerWidth;
   const height = window.innerHeight;
   const iframe = document.getElementsByTagName('iframe')[0];

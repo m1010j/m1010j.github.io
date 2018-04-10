@@ -144,6 +144,7 @@ var installRouter = function installRouter(navItemTexts, content) {
 };
 
 function resizeResume() {
+  setFontSize();
   var width = window.innerWidth;
   var height = window.innerHeight;
   var iframe = document.getElementsByTagName('iframe')[0];
