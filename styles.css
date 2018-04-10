@@ -55,11 +55,16 @@ a {
   flex-direction: row;
 }
 
+<<<<<<< HEAD
 .home-content > div > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+=======
+.home-content > div {
+  display: flex;
+>>>>>>> ba2bbe2626cf793322ac311c818192816400b715
 }
 
 .home-technologies {
@@ -95,8 +100,13 @@ p {
 }
 
 .portrait {
+<<<<<<< HEAD
   height: 15rem;
   max-height: 15vw;
+=======
+  height: 30vw;
+  max-height: 12rem;
+>>>>>>> ba2bbe2626cf793322ac311c818192816400b715
   width: auto;
   border-radius: 100%;
   margin: 0.5rem 1rem 0.5rem 0;
@@ -320,7 +330,6 @@ iframe body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100%;
 }
 
 @media (orientation: portrait) {
@@ -340,8 +349,11 @@ iframe body {
   }
 
   .portrait {
-    height: 15rem;
-    max-height: 30vh;
+    height: 40vw;
+    max-height: 15rem;
+    width: auto;
+    border-radius: 100%;
+    margin: 0.5rem 1rem 0 0;
   }
 
   .portrait,
