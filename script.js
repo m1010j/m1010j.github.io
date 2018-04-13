@@ -91,6 +91,7 @@ var router = new _navigo2.default(root, useHash, hash);
 document.addEventListener('DOMContentLoaded', function () {
   var main = Array.from(document.getElementsByTagName('main'));
   var navItems = Array.from(document.getElementsByClassName('navitem'));
+  var boxShadow = document.getElementById('box-shadow');
   var content = document.getElementById('content');
   var hash = 'home';
   if (window.location.hash.length > 0) {

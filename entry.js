@@ -100,6 +100,7 @@ var router = new Navigo(root, useHash, hash);
 document.addEventListener('DOMContentLoaded', function() {
   const main = Array.from(document.getElementsByTagName('main'));
   const navItems = Array.from(document.getElementsByClassName('navitem'));
+  const boxShadow = document.getElementById('box-shadow');
   const content = document.getElementById('content');
   let hash = 'home';
   if (window.location.hash.length > 0) {
