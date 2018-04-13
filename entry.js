@@ -46,6 +46,15 @@ const contents = {
     </div>
     </div>
     <div class="project-item">
+      <h1><a href="http://www.matthiasjenny.com/sat-zoo">Sat Zoo</a> <a href="https://github.com/m1010j/sat-zoo"><i class="fab fa-github"></i></a></h1>
+      <div class="project-item-detail">
+        <a href="https://github.com/m1010j/sat-zoo"><div class="sat-zoo-gif"></div></a>
+        <div>
+          A benchmarking tool for Boolean satisfiability, powered by my boolean-logic library (see below).
+        </div>
+      </div>
+    </div>
+    <div class="project-item">
       <h1><a href="https://github.com/m1010j/boolean-logic">boolean-logic</a> <a href="https://github.com/m1010j/boolean-logic"><i class="fab fa-github"></i></a> | <a href="https://www.npmjs.com/package/boolean-logic"><i class="fab fa-npm"></i></a></h1>
       <div class="project-item-detail">
         <a href="https://github.com/m1010j/boolean-logic"><div class="boolean-logic-png"></div></a>
