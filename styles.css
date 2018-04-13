@@ -229,6 +229,7 @@ h2 {
 }
 
 .andor-gif,
+.sat-zoo-gif,
 .boolean-logic-png,
 .livepoll-gif {
   background-size: cover;
@@ -241,6 +242,11 @@ h2 {
 .andor-gif {
   background-image: url('./img/andor.gif');
   height: 8.5rem;
+}
+
+.sat-zoo-gif {
+  background-image: url('./img/sat-zoo.gif');
+  height: 9.5rem;
 }
 
 .boolean-logic-png {
