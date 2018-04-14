@@ -66,9 +66,9 @@ img {
 
 .main h2 {
   border-bottom: #a6fcac 0.8rem solid;
-  margin: 0.65rem 0;
-  padding: 0.65rem 0;
-  font-size: 1.3rem;
+  margin: 0.5rem 0;
+  padding: 0.5rem 0;
+  font-size: 1.2rem;
 }
 
 .main > ul > li > ul > li {
@@ -104,7 +104,7 @@ img {
 
 .skills > ul,
 .contact > ul {
-  padding: 1.5rem;
+  padding: 1rem;
 }
 
 .contact > ul {
