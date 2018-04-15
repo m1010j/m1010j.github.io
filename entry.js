@@ -76,8 +76,8 @@ const contents = {
   resume: `
   <div class="resume">
     <div class="iframe-container">
-      <a href="./Matthias_Jenny_Resume.pdf" target="_blank" id="open-resume"><i class="fas fa-external-link-alt"></i></a>
-      <iframe src="${location.origin}/resume/index.html"></iframe>
+      <a href="http://www.matthiasjenny.com/resume/Matthias_Jenny_Resume.pdf" target="_blank" id="open-resume"><i class="fas fa-external-link-alt"></i></a>
+      <iframe src="http://www.matthiasjenny.com/resume/index.html"></iframe>
     </div>
   </div>
   `,
