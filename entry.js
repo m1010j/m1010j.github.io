@@ -92,10 +92,10 @@ const contents = {
   `,
 };
 
-var root = null;
-var useHash = true;
-var hash = '#';
-var router = new Navigo(root, useHash, hash);
+let root = null;
+const useHash = true;
+let hash = '#';
+const router = new Navigo(root, useHash, hash);
 
 document.addEventListener('DOMContentLoaded', function() {
   const main = Array.from(document.getElementsByTagName('main'));
@@ -139,6 +139,8 @@ document.addEventListener('DOMContentLoaded', function() {
 window.addEventListener('resize', resizeResume);
 
 window.addEventListener('orientationchange', setFontSize);
+
+window.onkeydown = handleKeydown;
 
 const installRouter = (navItemTexts, content) => {
   const routers = {};
@@ -223,5 +225,39 @@ function setFontSize() {
     } else {
       document.getElementsByTagName('html')[0].style.fontSize = '1.5em';
     }
+  }
+}
+
+const navItemStrings = ['home', 'projects', 'resume', 'contact'];
+let navItemStringIdx = 0;
+
+function handleKeydown(e) {
+  const key = e.key;
+  if (key === 'ArrowRight' || key === 'ArrowLeft') {
+    if (key === 'ArrowRight') {
+      navItemStringIdx = (navItemStringIdx + 1) % navItemStrings.length;
+    } else if (key === 'ArrowLeft') {
+      navItemStringIdx = (navItemStringIdx - 1) % navItemStrings.length;
+      if (navItemStringIdx === -1) {
+        navItemStringIdx = 3;
+      }
+    }
+    const nextLocation = navItemStrings[navItemStringIdx];
+    const navItems = Array.from(document.getElementsByClassName('navitem'));
+    const content = document.getElementById('content');
+    navItems.forEach(navItem => {
+      const type = navItem.innerText.toLowerCase();
+      if (nextLocation === type) {
+        navItem.classList.add(`${type}-active`);
+        navItem.classList.remove(type);
+        window.location = `#${type}`;
+        if (type === 'resume') {
+          setTimeout(resizeResume, 500);
+        }
+      } else {
+        navItem.classList.remove(`${type}-active`);
+        navItem.classList.add(type);
+      }
+    });
   }
 }
