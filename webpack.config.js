@@ -1,21 +1,16 @@
 const path = require('path');
 
 module.exports = {
-  context: __dirname,
   entry: './entry.js',
   output: {
     path: path.resolve(__dirname),
     filename: 'script.js',
   },
   module: {
-    loaders: [
+    rules: [
       {
-        test: [/\.jsx?$/],
-        exclude: /node_modules/,
-        loader: 'babel-loader',
-        query: {
-          presets: ['env', 'react'],
-        },
+        test: [/\.js?$/],
+        use: { loader: 'babel-loader' },
       },
     ],
   },
