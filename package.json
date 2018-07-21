@@ -2,11 +2,12 @@
   "name": "m1010j.github.io",
   "version": "1.0.0",
   "description": "",
-  "main": "style.js",
+  "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --hot --port 3000",
-    "webpack": "webpack --watch"
+    "webpack": "webpack --watch",
+    "build": "webpack --mode=production"
   },
   "repository": {
     "type": "git",
@@ -22,9 +23,8 @@
   "dependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
-    "babel-preset-env": "^1.7.0",
     "navigo": "^7.1.2",
-    "webpack": "^3.12.0",
+    "webpack": "^4.16.1",
     "webpack-cli": "^3.1.0"
   },
   "devDependencies": {

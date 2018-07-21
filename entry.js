@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   setTimeout(() => {
     main.forEach(el => el.setAttribute('style', 'opacity: 1'));
-    content.innerHTML = contents[hash];
+    content.innerHTML = contents[hash][0];
     if (hash === 'resume') {
       setTimeout(resizeResume, 300);
     }
