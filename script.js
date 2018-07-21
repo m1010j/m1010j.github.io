@@ -305,24 +305,65 @@ function handleKeydown(e) {
         navItemStringIdx = 3;
       }
     }
-    const nextLocation = navItemStrings[navItemStringIdx];
-    const navItems = Array.from(document.getElementsByClassName('navitem'));
-    const content = document.getElementById('content');
-    navItems.forEach(navItem => {
-      const type = navItem.innerText.toLowerCase();
-      if (nextLocation === type) {
-        navItem.classList.add(`${type}-active`);
-        navItem.classList.remove(type);
-        window.location = `#${type}`;
-        if (type === 'resume') {
-          setTimeout(resizeResume, 500);
-        }
-      } else {
-        navItem.classList.remove(`${type}-active`);
-        navItem.classList.add(type);
-      }
-    });
+    toggleActiveKeyOrSwipe();
   }
+}
+
+document.addEventListener('touchstart', handleTouchStart, false);
+document.addEventListener('touchmove', handleTouchMove, false);
+
+let xDown = null;
+let yDown = null;
+
+function handleTouchStart(evt) {
+  xDown = evt.touches[0].clientX;
+  yDown = evt.touches[0].clientY;
+};
+
+function handleTouchMove(evt) {
+  if (!xDown || !yDown) {
+    return;
+  }
+
+  const xUp = evt.touches[0].clientX;
+  const yUp = evt.touches[0].clientY;
+
+  const xDiff = xDown - xUp;
+  const yDiff = yDown - yUp;
+
+  if (Math.abs(xDiff) > Math.abs(yDiff)) {
+    if (xDiff > 20) {
+      navItemStringIdx = (navItemStringIdx + 1) % navItemStrings.length;
+    } else if (xDiff < -20) {
+      navItemStringIdx = (navItemStringIdx - 1) % navItemStrings.length;
+      if (navItemStringIdx === -1) {
+        navItemStringIdx = 3;
+      }
+    }
+  }
+  toggleActiveKeyOrSwipe();
+  xDown = null;
+  yDown = null;
+};
+
+function toggleActiveKeyOrSwipe() {
+  const nextLocation = navItemStrings[navItemStringIdx];
+  const navItems = Array.from(document.getElementsByClassName('navitem'));
+  const content = document.getElementById('content');
+  navItems.forEach(navItem => {
+    const type = navItem.innerText.toLowerCase();
+    if (nextLocation === type) {
+      navItem.classList.add(`${type}-active`);
+      navItem.classList.remove(type);
+      window.location = `#${type}`;
+      if (type === 'resume') {
+        setTimeout(resizeResume, 500);
+      }
+    } else {
+      navItem.classList.remove(`${type}-active`);
+      navItem.classList.add(type);
+    }
+  });
 }
 
 /***/ }),
