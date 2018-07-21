@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -68,210 +68,15 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_navigo__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_navigo___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_navigo__);
-
-
-const contents = {
-  home: `
-    <div class="home-content">
-        <div>
-          <img class="portrait" src="./img/matthias-jenny.png" />
-          <div>
-            <p>Hi, I'm Matthias Jenny, and I'm a full-stack web developer and teacher with a passion for logic. After writing a <a href="http://dspace.mit.edu/handle/1721.1/113731" target="_blank">PhD thesis</a> on computability theory, conditionals, and non-classical logic at MIT, I am now based in New York City, where I work at <a href="https://www.appacademy.io/">App Academy</a>. I get equally excited about writing sophisticated and efficient algorithms as I do about developing beautiful and responsive user interfaces.</p>
-            <p>In addition to writing software, I also like <a href="https://500px.com/m1010j">taking photos</a>.<p>
-          </div>
-        </div>
-      </div>
-    <div class="home-technologies">
-        <p>Favorite technologies:</p>
-        <div class="home-technologies-icons">
-          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img class="icon" src="./icons/javascript.png" /></a>
-          <a href="https://github.com/facebook/react"><img class="icon" src="./icons/react.png" /></a>
-          <a href="https://www.ruby-lang.org/en/"><img class="icon" src="./icons/ruby.png" /></a>
-          <a href="http://rubyonrails.org/"><img class="icon" src="./icons/rails.png" /></a>
-          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><img class="icon" src="./icons/html5.png" /></a>
-          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img class="icon" src="./icons/css3.png" /></a>
-        </div>
-      </div>
-    </div>    
-  `,
-  projects: `
-    <div class="project-item">
-      <h1><a href="http://www.andor.fun/">Andor</a></h1>
-      <div class="project-item-detail">
-        <a href="http://www.andor.fun/"><div class="andor-gif"></div></a>
-        <div>
-          An original logic game that teaches players the rules of the Boolean connectives. Built with React, Redux, Cordova, and my boolean-logic library (see below).<br />
-          <div class="play-links">
-            <a href='https://play.google.com/store/apps/details?id=io.cordova.andor' class="badge">
-              <img alt='Get Andor on Google Play' src='img/google.svg'/>
-            </a>
-            <a href='https://itunes.apple.com/us/app/andor-learn-logic/id1339495044' class="badge">
-              <img alt='Download Andor on the App Store' src='img/apple.svg'/>
-            </a>
-            <a href='https://www.amazon.com/dp/B079FM48R9/ref=sr_1_1?ie=UTF8&qid=1517356419' class="badge">
-              <img alt='Download Andor on the App Store' src='img/amazon.svg'/>
-            </a>
-          </div>
-        </div>
-    </div>
-    </div>
-    <div class="project-item">
-      <h1><a href="http://www.matthiasjenny.com/sat-zoo">Sat Zoo</a> <a href="https://github.com/m1010j/sat-zoo"><i class="fab fa-github"></i></a></h1>
-      <div class="project-item-detail">
-        <a href="https://github.com/m1010j/sat-zoo"><div class="sat-zoo-gif"></div></a>
-        <div>
-          A benchmarking tool for Boolean satisfiability, powered by my boolean-logic library (see below).
-        </div>
-      </div>
-    </div>
-    <div class="project-item">
-      <h1><a href="https://github.com/m1010j/boolean-logic">boolean-logic</a> <a href="https://github.com/m1010j/boolean-logic"><i class="fab fa-github"></i></a> | <a href="https://www.npmjs.com/package/boolean-logic"><i class="fab fa-npm"></i></a></h1>
-      <div class="project-item-detail">
-        <a href="https://github.com/m1010j/boolean-logic"><div class="boolean-logic-png"></div></a>
-        <div>
-          A lightweight JavaScript library for evaluating formulas of Boolean logic.
-        </div>
-      </div>
-    </div>
-    <div class="project-item">
-      <h1><a href="http://www.livepoll.info/">LivePoll</a> <a href="https://github.com/m1010j/LivePoll"><i class="fab fa-github"></i></a></h1>
-      <div class="project-item-detail">
-        <a href="http://www.livepoll.info/"><div class="livepoll-gif"></div></a>
-        <div>
-          A Poll Everywhere clone built with Rails, React, Redux, Pusher, and AWS.
-        </div>
-      </div>
-    </div>
-  `,
-  resume: `
-  <div class="resume">
-    <div class="iframe-container">
-      <a href="https://www.matthiasjenny.com/resume/Matthias_Jenny_Resume.pdf" target="_blank" id="open-resume"><i class="fas fa-external-link-alt"></i></a>
-      <iframe src="https://www.matthiasjenny.com/resume/index.html"></iframe>
-    </div>
-  </div>
-  `,
-  contact: `
-    <div class="contact-content">
-      <p><a href="mailto:matthiascjenny@gmail.com"><i class="fas fa-envelope"></i> matthiascjenny@gmail.com</a></p>
-      <p><a href="https://github.com/m1010j"><i class="fab fa-github"></i> github.com/m1010j</a></p>
-      <p><a href="https://twitter.com/_m1010j_"><i class="fab fa-twitter"></i> twitter.com/_m1010j_</a></p>
-      <p><a href="https://www.linkedin.com/in/m1010j/"><i class="fab fa-linkedin"></i> linkedin.com/in/m1010j</a></p>
-      <p><a href="https://angel.co/m1010j"><i class="fab fa-angellist"></i> angel.co/m1010j</a></p>
-    </div>
-  `
-};
-
-let root = null;
-const useHash = true;
-let hash = '#';
-const router = new __WEBPACK_IMPORTED_MODULE_0_navigo___default.a(root, useHash, hash);
-
-document.addEventListener('DOMContentLoaded', function () {
-  const main = Array.from(document.getElementsByTagName('main'));
-  const navItems = Array.from(document.getElementsByClassName('navitem'));
-  const boxShadow = document.getElementById('box-shadow');
-  const content = document.getElementById('content');
-  let hash = 'home';
-  if (window.location.hash.length > 0) {
-    hash = window.location.hash.slice(1);
-  }
-  setTimeout(() => {
-    main.forEach(el => el.setAttribute('style', 'opacity: 1'));
-    content.innerHTML = contents[hash];
-    if (hash === 'resume') {
-      setTimeout(resizeResume, 300);
-    }
-  }, 100);
-
-  navItems.forEach(navItem => {
-    navItem.addEventListener('click', toggleActive(navItems, content));
-    const type = navItem.innerText.toLowerCase();
-    if (hash === type) {
-      navItem.classList.add(`${type}-active`);
-      navItem.classList.remove(type);
-      window.location = `#${type}`;
+/* harmony default export */ __webpack_exports__["a"] = (() => {
+  if (isMobile()) {
+    if (window.innerHeight < window.innerWidth) {
+      document.getElementsByTagName('html')[0].style.fontSize = '1em';
     } else {
-      navItem.classList.remove(`${type}-active`);
-      navItem.classList.add(type);
+      document.getElementsByTagName('html')[0].style.fontSize = '1.5em';
     }
-  });
-
-  const navItemTexts = navItems.map(navItem => {
-    return navItem.innerText.toLowerCase();
-  });
-
-  installRouter(navItemTexts, content);
-
-  setFontSize();
+  }
 });
-
-window.addEventListener('resize', resizeResume);
-
-window.addEventListener('orientationchange', setFontSize);
-
-window.onkeydown = handleKeydown;
-
-const installRouter = (navItemTexts, content) => {
-  const routers = {};
-  navItemTexts.forEach(navItemText => {
-    routers[navItemText] = function () {
-      content.innerHTML = contents[navItemText];
-    };
-  });
-
-  router.on(routers).resolve();
-};
-
-function resizeResume() {
-  setFontSize();
-  const width = window.innerWidth;
-  const height = window.innerHeight;
-  const iframe = document.getElementsByTagName('iframe')[0];
-  const innerDoc = iframe.contentDocument || iframe.contentWindow.document;
-  const innerHtml = innerDoc.getElementsByTagName('html')[0];
-  const openResume = document.getElementById('open-resume');
-  const iframeContainer = document.getElementsByClassName('iframe-container')[0];
-  if (!iframe || !innerDoc || !innerHtml || !openResume || !iframeContainer) {
-    setTimeout(resizeResume, 100);
-  } else {
-    let multiplier;
-    let factor;
-    if (width >= height) {
-      multiplier = 0.5;
-      factor = 1684;
-    } else {
-      multiplier = 0.75;
-      factor = 1115;
-    }
-    iframeContainer.style.opacity = 1;
-    iframe.style.width = `${Math.floor(multiplier * width)}px`;
-    iframe.style.height = `${Math.floor(multiplier * width * 10.41 / 8)}px`;
-    innerHtml.style.fontSize = `${width / factor}em`;
-  }
-}
-
-const toggleActive = (navItems, content) => {
-  return e => {
-    navItems.forEach(navItem => {
-      const type = navItem.innerText.toLowerCase();
-      if (e.target === navItem) {
-        navItem.classList.add(`${type}-active`);
-        navItem.classList.remove(type);
-        window.location = `#${type}`;
-        if (type === 'resume') {
-          setTimeout(resizeResume, 500);
-        }
-      } else {
-        navItem.classList.remove(`${type}-active`);
-        navItem.classList.add(type);
-      }
-    });
-  };
-};
 
 function isMobile() {
   var check = false;
@@ -281,93 +86,72 @@ function isMobile() {
   return check;
 }
 
-function setFontSize() {
-  if (isMobile()) {
-    if (window.innerHeight < window.innerWidth) {
-      document.getElementsByTagName('html')[0].style.fontSize = '1em';
-    } else {
-      document.getElementsByTagName('html')[0].style.fontSize = '1.5em';
-    }
-  }
-}
-
-const navItemStrings = ['home', 'projects', 'resume', 'contact'];
-let navItemStringIdx = 0;
-
-function handleKeydown(e) {
-  const key = e.key;
-  if (key === 'ArrowRight' || key === 'ArrowLeft') {
-    if (key === 'ArrowRight') {
-      navItemStringIdx = (navItemStringIdx + 1) % navItemStrings.length;
-    } else if (key === 'ArrowLeft') {
-      navItemStringIdx = (navItemStringIdx - 1) % navItemStrings.length;
-      if (navItemStringIdx === -1) {
-        navItemStringIdx = 3;
-      }
-    }
-    toggleActiveKeyOrSwipe();
-  }
-}
-
-document.addEventListener('touchstart', handleTouchStart, false);
-document.addEventListener('touchmove', handleTouchMove, false);
-
-let xDown = null;
-let yDown = null;
-
-function handleTouchStart(evt) {
-  xDown = evt.touches[0].clientX;
-  yDown = evt.touches[0].clientY;
-};
-
-function handleTouchMove(evt) {
-  if (!xDown || !yDown) {
-    return;
-  }
-
-  const xUp = evt.touches[0].clientX;
-  const yUp = evt.touches[0].clientY;
-
-  const xDiff = xDown - xUp;
-  const yDiff = yDown - yUp;
-
-  if (Math.abs(xDiff) > Math.abs(yDiff)) {
-    if (xDiff > 20) {
-      navItemStringIdx = (navItemStringIdx + 1) % navItemStrings.length;
-    } else if (xDiff < -20) {
-      navItemStringIdx = (navItemStringIdx - 1) % navItemStrings.length;
-      if (navItemStringIdx === -1) {
-        navItemStringIdx = 3;
-      }
-    }
-  }
-  toggleActiveKeyOrSwipe();
-  xDown = null;
-  yDown = null;
-};
-
-function toggleActiveKeyOrSwipe() {
-  const nextLocation = navItemStrings[navItemStringIdx];
-  const navItems = Array.from(document.getElementsByClassName('navitem'));
-  const content = document.getElementById('content');
-  navItems.forEach(navItem => {
-    const type = navItem.innerText.toLowerCase();
-    if (nextLocation === type) {
-      navItem.classList.add(`${type}-active`);
-      navItem.classList.remove(type);
-      window.location = `#${type}`;
-      if (type === 'resume') {
-        setTimeout(resizeResume, 500);
-      }
-    } else {
-      navItem.classList.remove(`${type}-active`);
-      navItem.classList.add(type);
-    }
-  });
-}
-
 /***/ }),
 /* 1 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_navigo__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_navigo___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_navigo__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__contents__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__util_set_font_size__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__util_resize_resume__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__util_navigator__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__util_install_router__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__util_toggle__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__util_event_handlers__ = __webpack_require__(9);
+
+
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const main = Array.from(document.getElementsByTagName('main'));
+  const navItems = Array.from(document.getElementsByClassName('navitem'));
+  const boxShadow = document.getElementById('box-shadow');
+  const content = document.getElementById('content');
+
+  const router = new __WEBPACK_IMPORTED_MODULE_0_navigo___default.a(null, true, '#');
+  Object(__WEBPACK_IMPORTED_MODULE_5__util_install_router__["a" /* default */])(router, navItems, content);
+
+  let hash = 'home';
+  if (window.location.hash.length > 0) {
+    hash = window.location.hash.slice(1);
+  }
+  setTimeout(() => {
+    main.forEach(el => el.setAttribute('style', 'opacity: 1'));
+    content.innerHTML = __WEBPACK_IMPORTED_MODULE_1__contents__["a" /* default */][hash];
+    if (hash === 'resume') {
+      setTimeout(__WEBPACK_IMPORTED_MODULE_3__util_resize_resume__["a" /* default */], 300);
+    }
+  }, 100);
+
+  navItems.forEach(navItem => {
+    navItem.addEventListener('click', Object(__WEBPACK_IMPORTED_MODULE_7__util_event_handlers__["a" /* handleClick */])(navItems, content));
+    Object(__WEBPACK_IMPORTED_MODULE_6__util_toggle__["a" /* toggleActive */])(navItem, hash);
+  });
+
+  Object(__WEBPACK_IMPORTED_MODULE_2__util_set_font_size__["a" /* default */])();
+  document.addEventListener('resize', __WEBPACK_IMPORTED_MODULE_3__util_resize_resume__["a" /* default */]);
+  document.addEventListener('orientationchange', __WEBPACK_IMPORTED_MODULE_2__util_set_font_size__["a" /* default */]);
+
+  const navItemTexts = Object.keys(__WEBPACK_IMPORTED_MODULE_1__contents__["a" /* default */]).sort((a, b) => {
+    return __WEBPACK_IMPORTED_MODULE_1__contents__["a" /* default */][a][1] - __WEBPACK_IMPORTED_MODULE_1__contents__["a" /* default */][b][1];
+  });
+  const navItemIdx = navItemTexts.indexOf(hash);
+  const navigator = new __WEBPACK_IMPORTED_MODULE_4__util_navigator__["a" /* default */](navItemTexts, navItemIdx);
+  document.onkeydown = navigator.handleKeydown;
+  document.addEventListener('touchstart', navigator.handleTouchStart, false);
+  document.addEventListener('touchmove', navigator.handleTouchMove, false);
+});
+
+/***/ }),
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 !function (e, t) {
@@ -517,6 +301,297 @@ function toggleActiveKeyOrSwipe() {
     } }, n.PARAMETER_REGEXP = /([:*])(\w+)/g, n.WILDCARD_REGEXP = /\*/g, n.REPLACE_VARIABLE_REGEXP = "([^/]+)", n.REPLACE_WILDCARD = "(?:.*)", n.FOLLOWED_BY_SLASH_REGEXP = "(?:/$|$)", n.MATCH_REGEXP_FLAGS = "", n;
 });
 //# sourceMappingURL=navigo.min.js.map
+
+/***/ }),
+/* 3 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+const contents = {
+  home: [`
+    <div class="home-content">
+        <div>
+          <img class="portrait" src="./img/matthias-jenny.png" />
+          <div>
+            <p>Hi, I'm Matthias Jenny, and I'm a full-stack web developer and teacher with a passion for logic. After writing a <a href="http://dspace.mit.edu/handle/1721.1/113731" target="_blank">PhD thesis</a> on computability theory, conditionals, and non-classical logic at MIT, I am now based in New York City, where I work at <a href="https://www.appacademy.io/">App Academy</a>. I get equally excited about writing sophisticated and efficient algorithms as I do about developing beautiful and responsive user interfaces.</p>
+            <p>In addition to writing software, I also like <a href="https://500px.com/m1010j">taking photos</a>.<p>
+          </div>
+        </div>
+      </div>
+    <div class="home-technologies">
+        <p>Favorite technologies:</p>
+        <div class="home-technologies-icons">
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img class="icon" src="./icons/javascript.png" /></a>
+          <a href="https://github.com/facebook/react"><img class="icon" src="./icons/react.png" /></a>
+          <a href="https://www.ruby-lang.org/en/"><img class="icon" src="./icons/ruby.png" /></a>
+          <a href="http://rubyonrails.org/"><img class="icon" src="./icons/rails.png" /></a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><img class="icon" src="./icons/html5.png" /></a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img class="icon" src="./icons/css3.png" /></a>
+        </div>
+      </div>
+    </div>    
+  `, 0],
+  projects: [`
+    <div class="project-item">
+      <h1><a href="http://www.andor.fun/">Andor</a></h1>
+      <div class="project-item-detail">
+        <a href="http://www.andor.fun/"><div class="andor-gif"></div></a>
+        <div>
+          An original logic game that teaches players the rules of the Boolean connectives. Built with React, Redux, Cordova, and my boolean-logic library (see below).<br />
+          <div class="play-links">
+            <a href='https://play.google.com/store/apps/details?id=io.cordova.andor' class="badge">
+              <img alt='Get Andor on Google Play' src='img/google.svg'/>
+            </a>
+            <a href='https://itunes.apple.com/us/app/andor-learn-logic/id1339495044' class="badge">
+              <img alt='Download Andor on the App Store' src='img/apple.svg'/>
+            </a>
+            <a href='https://www.amazon.com/dp/B079FM48R9/ref=sr_1_1?ie=UTF8&qid=1517356419' class="badge">
+              <img alt='Download Andor on the App Store' src='img/amazon.svg'/>
+            </a>
+          </div>
+        </div>
+    </div>
+    </div>
+    <div class="project-item">
+      <h1><a href="http://www.matthiasjenny.com/sat-zoo">Sat Zoo</a> <a href="https://github.com/m1010j/sat-zoo"><i class="fab fa-github"></i></a></h1>
+      <div class="project-item-detail">
+        <a href="https://github.com/m1010j/sat-zoo"><div class="sat-zoo-gif"></div></a>
+        <div>
+          A benchmarking tool for Boolean satisfiability, powered by my boolean-logic library (see below).
+        </div>
+      </div>
+    </div>
+    <div class="project-item">
+      <h1><a href="https://github.com/m1010j/boolean-logic">boolean-logic</a> <a href="https://github.com/m1010j/boolean-logic"><i class="fab fa-github"></i></a> | <a href="https://www.npmjs.com/package/boolean-logic"><i class="fab fa-npm"></i></a></h1>
+      <div class="project-item-detail">
+        <a href="https://github.com/m1010j/boolean-logic"><div class="boolean-logic-png"></div></a>
+        <div>
+          A lightweight JavaScript library for evaluating formulas of Boolean logic.
+        </div>
+      </div>
+    </div>
+    <div class="project-item">
+      <h1><a href="http://www.livepoll.info/">LivePoll</a> <a href="https://github.com/m1010j/LivePoll"><i class="fab fa-github"></i></a></h1>
+      <div class="project-item-detail">
+        <a href="http://www.livepoll.info/"><div class="livepoll-gif"></div></a>
+        <div>
+          A Poll Everywhere clone built with Rails, React, Redux, Pusher, and AWS.
+        </div>
+      </div>
+    </div>
+  `, 1],
+  resume: [`
+  <div class="resume">
+    <div class="iframe-container">
+      <a href="https://www.matthiasjenny.com/resume/Matthias_Jenny_Resume.pdf" target="_blank" id="open-resume"><i class="fas fa-external-link-alt"></i></a>
+      <iframe src="https://www.matthiasjenny.com/resume/index.html"></iframe>
+    </div>
+  </div>
+  `, 2],
+  contact: [`
+    <div class="contact-content">
+      <p><a href="mailto:matthiascjenny@gmail.com"><i class="fas fa-envelope"></i> matthiascjenny@gmail.com</a></p>
+      <p><a href="https://github.com/m1010j"><i class="fab fa-github"></i> github.com/m1010j</a></p>
+      <p><a href="https://twitter.com/_m1010j_"><i class="fab fa-twitter"></i> twitter.com/_m1010j_</a></p>
+      <p><a href="https://www.linkedin.com/in/m1010j/"><i class="fab fa-linkedin"></i> linkedin.com/in/m1010j</a></p>
+      <p><a href="https://angel.co/m1010j"><i class="fab fa-angellist"></i> angel.co/m1010j</a></p>
+    </div>
+  `, 3]
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (contents);
+
+/***/ }),
+/* 4 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__set_font_size__ = __webpack_require__(0);
+
+
+/* harmony default export */ __webpack_exports__["a"] = (() => {
+  Object(__WEBPACK_IMPORTED_MODULE_0__set_font_size__["a" /* default */])();
+  const width = window.innerWidth;
+  const height = window.innerHeight;
+  const iframe = document.getElementsByTagName('iframe')[0];
+  const innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+  const innerHtml = innerDoc.getElementsByTagName('html')[0];
+  const openResume = document.getElementById('open-resume');
+  const iframeContainer = document.getElementsByClassName('iframe-container')[0];
+  if (!iframe || !innerDoc || !innerHtml || !openResume || !iframeContainer) {
+    setTimeout(resizeResume, 100);
+  } else {
+    let multiplier;
+    let factor;
+    if (width >= height) {
+      multiplier = 0.5;
+      factor = 1684;
+    } else {
+      multiplier = 0.75;
+      factor = 1115;
+    }
+    iframeContainer.style.opacity = 1;
+    iframe.style.width = `${Math.floor(multiplier * width)}px`;
+    iframe.style.height = `${Math.floor(multiplier * width * 10.41 / 8)}px`;
+    innerHtml.style.fontSize = `${width / factor}em`;
+  }
+});
+
+/***/ }),
+/* 5 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__event_handlers__ = __webpack_require__(9);
+
+
+/* harmony default export */ __webpack_exports__["a"] = (class {
+  constructor(navItemTexts, navItemIdx) {
+    this.navItemTexts = Object.freeze(navItemTexts);
+    this.numNavItems = this.navItemTexts.length;
+    this.navItemIdx = navItemIdx;
+    this.xDown = null;
+    this.yDown = null;
+    this.navItems = Array.from(document.getElementsByClassName('navitem'));
+    this.handleKeydown = this.handleKeydown.bind(this);
+    this.handleTouchStart = this.handleTouchStart.bind(this);
+    this.handleTouchMove = this.handleTouchMove.bind(this);
+  }
+
+  handleKeydown(e) {
+    const key = e.key;
+    if (key === 'ArrowRight' || key === 'ArrowLeft') {
+      if (key === 'ArrowRight') {
+        this.navItemIdx = (this.navItemIdx + 1) % this.numNavItems;
+      } else if (key === 'ArrowLeft') {
+        this.navItemIdx = (this.navItemIdx - 1) % this.numNavItems;
+        if (this.navItemIdx === -1) {
+          this.navItemIdx = 3;
+        }
+      }
+      const nextLocation = this.navItemTexts[this.navItemIdx];
+      Object(__WEBPACK_IMPORTED_MODULE_0__event_handlers__["b" /* handleKeyOrSwipe */])(this.navItems, nextLocation);
+    }
+  }
+
+  handleTouchStart(evt) {
+    this.xDown = evt.touches[0].clientX;
+    this.yDown = evt.touches[0].clientY;
+  }
+
+  handleTouchMove(evt) {
+    if (!this.xDown || !this.yDown) {
+      return;
+    }
+
+    const xUp = evt.touches[0].clientX;
+    const yUp = evt.touches[0].clientY;
+
+    const xDiff = this.xDown - xUp;
+    const yDiff = this.yDown - yUp;
+
+    if (Math.abs(xDiff) > Math.abs(yDiff)) {
+      if (xDiff > 20) {
+        this.navItemIdx = (this.navItemIdx + 1) % this.numNavItems;
+      } else if (xDiff < -20) {
+        this.navItemIdx = (this.navItemIdx - 1) % this.numNavItems;
+        if (this.navItemIdx === -1) {
+          this.navItemIdx = 3;
+        }
+      }
+    }
+    const nextLocation = this.navItemTexts[this.navItemIdx];
+    Object(__WEBPACK_IMPORTED_MODULE_0__event_handlers__["b" /* handleKeyOrSwipe */])(this.navItems, nextLocation);
+    this.xDown = null;
+    this.yDown = null;
+  }
+});
+
+/***/ }),
+/* 6 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__resize_resume__ = __webpack_require__(4);
+
+
+const toggleActive = (navItem, hash) => {
+  const type = navItem.innerText.toLowerCase();
+  if (hash === type) {
+    toggleContent(type);
+  }
+};
+/* harmony export (immutable) */ __webpack_exports__["a"] = toggleActive;
+
+
+const toggleContent = type => {
+  window.location = `#${type}`;
+  if (type === 'resume') {
+    setTimeout(__WEBPACK_IMPORTED_MODULE_0__resize_resume__["a" /* default */], 500);
+  }
+};
+/* unused harmony export toggleContent */
+
+
+/***/ }),
+/* 7 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__contents__ = __webpack_require__(3);
+
+
+/* harmony default export */ __webpack_exports__["a"] = ((router, navItems, content) => {
+  const routers = {};
+  const navItemTexts = navItems.map(navItem => {
+    return navItem.innerText.toLowerCase();
+  });
+  navItemTexts.forEach(navItemText => {
+    routers[navItemText] = function () {
+      content.innerHTML = __WEBPACK_IMPORTED_MODULE_0__contents__["a" /* default */][navItemText][0];
+      navItems.forEach(navItem => {
+        const type = navItem.innerText.toLowerCase();
+        if (navItemText === type) {
+          navItem.classList.add(`${type}-active`);
+          navItem.classList.remove(type);
+        } else {
+          navItem.classList.remove(`${type}-active`);
+          navItem.classList.add(type);
+        }
+      });
+    };
+  });
+
+  router.on(routers).resolve();
+});
+
+/***/ }),
+/* 8 */,
+/* 9 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__toggle__ = __webpack_require__(6);
+
+
+const handleKeyOrSwipe = (navItems, nextLocation) => {
+  navItems.forEach(navItem => {
+    Object(__WEBPACK_IMPORTED_MODULE_0__toggle__["a" /* toggleActive */])(navItem, nextLocation);
+  });
+};
+/* harmony export (immutable) */ __webpack_exports__["b"] = handleKeyOrSwipe;
+
+
+const handleClick = (navItems, content) => {
+  return e => {
+    navItems.forEach(navItem => {
+      const hash = e.target.innerText.toLowerCase();
+      Object(__WEBPACK_IMPORTED_MODULE_0__toggle__["a" /* toggleActive */])(navItem, hash);
+    });
+  };
+};
+/* harmony export (immutable) */ __webpack_exports__["a"] = handleClick;
+
 
 /***/ })
 /******/ ]);
