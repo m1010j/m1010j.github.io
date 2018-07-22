@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --hot --port 3000",
-    "webpack": "webpack --watch",
+    "webpack": "webpack --mode=development --watch",
     "build": "webpack --mode=production"
   },
   "repository": {
@@ -20,14 +20,11 @@
     "url": "https://github.com/m1010j/m1010j.github.io/issues"
   },
   "homepage": "https://github.com/m1010j/m1010j.github.io#readme",
-  "dependencies": {
+  "devDependencies": {
+    "webpack-dev-server": "2.11.1",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
-    "navigo": "^7.1.2",
     "webpack": "^4.16.1",
     "webpack-cli": "^3.1.0"
-  },
-  "devDependencies": {
-    "webpack-dev-server": "2.11.1"
   }
 }
