@@ -28,10 +28,19 @@ const contents = {
   projects: [
     `
     <div class="project-item">
+      <h1><a href="http://async.matthiasjenny.com/">Explorations in Asynchronicity</a> <a href="https://github.com/m1010j/async-explorations"><i class="fab fa-github"></i></a></h1>
+      <div class="project-item-detail">
+        <a href="http://async.matthiasjenny.com/"><div class="async-explorations-gif"></div></a>
+        <div class="project-item-description">
+          A benchmark and analysis tool for asynchronous recursive functions
+        </div>
+      </div>
+    </div>
+    <div class="project-item">
       <h1><a href="http://www.andor.fun/">Andor</a></h1>
       <div class="project-item-detail">
         <a href="http://www.andor.fun/"><div class="andor-gif"></div></a>
-        <div>
+        <div class="project-item-description">
           An original logic game that teaches players the rules of the Boolean connectives. Built with React, Redux, Cordova, and my boolean-logic library (see below).<br />
           <div class="play-links">
             <a href='https://play.google.com/store/apps/details?id=io.cordova.andor' class="badge">
@@ -51,7 +60,7 @@ const contents = {
       <h1><a href="http://www.matthiasjenny.com/sat-zoo">Sat Zoo</a> <a href="https://github.com/m1010j/sat-zoo"><i class="fab fa-github"></i></a></h1>
       <div class="project-item-detail">
         <a href="https://github.com/m1010j/sat-zoo"><div class="sat-zoo-gif"></div></a>
-        <div>
+        <div class="project-item-description">
           A benchmarking tool for Boolean satisfiability, powered by my boolean-logic library (see below).
         </div>
       </div>
@@ -60,17 +69,8 @@ const contents = {
       <h1><a href="https://github.com/m1010j/boolean-logic">boolean-logic</a> <a href="https://github.com/m1010j/boolean-logic"><i class="fab fa-github"></i></a> | <a href="https://www.npmjs.com/package/boolean-logic"><i class="fab fa-npm"></i></a></h1>
       <div class="project-item-detail">
         <a href="https://github.com/m1010j/boolean-logic"><div class="boolean-logic-png"></div></a>
-        <div>
+        <div class="project-item-description">
           A lightweight JavaScript library for evaluating formulas of Boolean logic.
-        </div>
-      </div>
-    </div>
-    <div class="project-item">
-      <h1><a href="http://www.livepoll.info/">LivePoll</a> <a href="https://github.com/m1010j/LivePoll"><i class="fab fa-github"></i></a></h1>
-      <div class="project-item-detail">
-        <a href="http://www.livepoll.info/"><div class="livepoll-gif"></div></a>
-        <div>
-          A Poll Everywhere clone built with Rails, React, Redux, Pusher, and AWS.
         </div>
       </div>
     </div>

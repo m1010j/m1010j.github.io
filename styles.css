@@ -242,10 +242,16 @@ h2 {
   flex-direction: row;
 }
 
+.project-item-description {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
 .andor-gif,
 .sat-zoo-gif,
 .boolean-logic-png,
-.livepoll-gif {
+.async-explorations-gif {
   background-size: cover;
   background-position: center;
   margin: 0.5rem 1rem 0 0;
@@ -268,9 +274,9 @@ h2 {
   height: 8.623rem;
 }
 
-.livepoll-gif {
-  background-image: url('./img/livepoll.gif');
-  height: 11.3625rem;
+.async-explorations-gif {
+  background-image: url('./img/async-explorations.gif');
+  height: 17.3625rem;
 }
 
 .badge img {
