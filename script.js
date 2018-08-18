@@ -110,11 +110,11 @@ const contents = {
         <p>Favorite technologies:</p>
         <div class="home-technologies-icons">
           <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img class="icon" src="./icons/javascript.png" /></a>
-          <a href="https://github.com/facebook/react"><img class="icon" src="./icons/react.png" /></a>
-          <a href="https://www.ruby-lang.org/en/"><img class="icon" src="./icons/ruby.png" /></a>
+          <a href="https://nodejs.org/"><img class="icon" src="./icons/nodejs.svg" /></a>
+          <a href="https://expressjs.com/"><img class="icon" src="./icons/express.png" /></a>
+          <a href="https://www.ruby-lang.org/"><img class="icon" src="./icons/ruby.png" /></a>
           <a href="http://rubyonrails.org/"><img class="icon" src="./icons/rails.png" /></a>
-          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><img class="icon" src="./icons/html5.png" /></a>
-          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img class="icon" src="./icons/css3.png" /></a>
+          <a href="https://reactjs.org/"><img class="icon" src="./icons/react.png" /></a>
         </div>
       </div>
     </div>    
