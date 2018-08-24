@@ -28,11 +28,11 @@ const contents = {
   projects: [
     `
     <div class="project-item">
-      <h1><a href="http://async.matthiasjenny.com/">Explorations in Asynchronicity</a> <a href="https://github.com/m1010j/async-explorations"><i class="fab fa-github"></i></a></h1>
+      <h1><a href="http://async.matthiasjenny.com/">Explorations in Asynchronicity</a> <a href="https://github.com/m1010j/async-explorations"><i class="fab fa-github"></i></a> | <a href="https://www.npmjs.com/package/async-explorations-cli"><i class="fab fa-npm"></i></a></h1>
       <div class="project-item-detail">
         <a href="http://async.matthiasjenny.com/"><div class="async-explorations-gif"></div></a>
         <div class="project-item-description">
-          A benchmark and analysis tool for asynchronous recursive functions
+          A benchmark and analysis tool for asynchronous recursive functions. I discuss some of the most surprising results <a href="https://github.com/m1010j/async-explorations-writeup/blob/master/README.md">here</a>.
         </div>
       </div>
     </div>
