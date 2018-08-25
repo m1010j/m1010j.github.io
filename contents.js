@@ -30,7 +30,7 @@ const contents = {
     <div class="project-item">
       <h1><a href="http://async.matthiasjenny.com/">Explorations in Asynchronicity</a> <a href="https://github.com/m1010j/async-explorations"><i class="fab fa-github"></i></a> | <a href="https://www.npmjs.com/package/async-explorations-cli"><i class="fab fa-npm"></i></a></h1>
       <div class="project-item-detail">
-        <a href="http://async.matthiasjenny.com/"><div class="async-explorations-gif"></div></a>
+        <a href="http://async.matthiasjenny.com/"><div class="async-explorations-gif project-image"></div></a>
         <div class="project-item-description">
           <div>A benchmark and analysis tool for asynchronous recursive functions. I discuss some of the most surprising results <a href="https://github.com/m1010j/async-explorations-writeup/blob/master/README.md">here</a>.</div>
         </div>
@@ -39,7 +39,7 @@ const contents = {
     <div class="project-item">
       <h1><a href="http://www.andor.fun/">Andor</a></h1>
       <div class="project-item-detail">
-        <a href="http://www.andor.fun/"><div class="andor-gif"></div></a>
+        <a href="http://www.andor.fun/"><div class="andor-gif project-image"></div></a>
         <div class="project-item-description">
           An original logic game that teaches players the rules of the Boolean connectives. Built with React, Redux, Cordova, and my boolean-logic library (see below).<br />
           <div class="play-links">
@@ -59,7 +59,7 @@ const contents = {
     <div class="project-item">
       <h1><a href="http://www.matthiasjenny.com/sat-zoo">Sat Zoo</a> <a href="https://github.com/m1010j/sat-zoo"><i class="fab fa-github"></i></a></h1>
       <div class="project-item-detail">
-        <a href="https://github.com/m1010j/sat-zoo"><div class="sat-zoo-gif"></div></a>
+        <a href="https://github.com/m1010j/sat-zoo"><div class="sat-zoo-gif project-image"></div></a>
         <div class="project-item-description">
           A benchmarking tool for Boolean satisfiability, powered by my boolean-logic library (see below).
         </div>
@@ -68,7 +68,7 @@ const contents = {
     <div class="project-item">
       <h1><a href="https://github.com/m1010j/boolean-logic">boolean-logic</a> <a href="https://github.com/m1010j/boolean-logic"><i class="fab fa-github"></i></a> | <a href="https://www.npmjs.com/package/boolean-logic"><i class="fab fa-npm"></i></a></h1>
       <div class="project-item-detail">
-        <a href="https://github.com/m1010j/boolean-logic"><div class="boolean-logic-png"></div></a>
+        <a href="https://github.com/m1010j/boolean-logic"><div class="boolean-logic-png project-image"></div></a>
         <div class="project-item-description">
           A lightweight JavaScript library for evaluating formulas of Boolean logic.
         </div>
