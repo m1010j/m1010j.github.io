@@ -32,7 +32,7 @@ const contents = {
       <div class="project-item-detail">
         <a href="http://async.matthiasjenny.com/"><div class="async-explorations-gif project-image"></div></a>
         <div class="project-item-description">
-          <div>A benchmark and analysis tool for asynchronous recursive functions. I discuss some of the most surprising results <a href="https://medium.com/@matthiascjenny/async-recursion-promising-surprising-but-foremost-confusing-5e13aa8bbc06">here</a>.</div>
+          <div>A benchmark and analysis tool for asynchronous recursive functions. I discuss some of the most surprising results <a href="https://medium.com/@_m1010j_/async-recursion-promising-surprising-but-foremost-confusing-5e13aa8bbc06">here</a>.</div>
         </div>
       </div>
     </div>
