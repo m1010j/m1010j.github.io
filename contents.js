@@ -19,6 +19,7 @@ const contents = {
           <a href="https://www.ruby-lang.org/"><img class="icon" src="./icons/ruby.png" /></a>
           <a href="http://rubyonrails.org/"><img class="icon" src="./icons/rails.png" /></a>
           <a href="https://reactjs.org/"><img class="icon" src="./icons/react.png" /></a>
+          <a href="https://https://vuejs.org/"><img class="icon" src="./icons/vuejs.svg" /></a>
         </div>
       </div>
     </div>    
@@ -28,11 +29,20 @@ const contents = {
   projects: [
     `
     <div class="project-item">
-      <h1><a href="http://async.matthiasjenny.com/">Explorations in Asynchronicity</a> <a href="https://github.com/m1010j/async-explorations"><i class="fab fa-github"></i></a> | <a href="https://www.npmjs.com/package/async-explorations-cli"><i class="fab fa-npm"></i></a></h1>
+      <h1><a href="https://async.matthiasjenny.com/">Explorations in Asynchronicity</a> <a href="https://github.com/m1010j/async-explorations"><i class="fab fa-github"></i></a> | <a href="https://www.npmjs.com/package/async-explorations-cli"><i class="fab fa-npm"></i></a></h1>
       <div class="project-item-detail">
-        <a href="http://async.matthiasjenny.com/"><div class="async-explorations-gif project-image"></div></a>
+        <a href="https://async.matthiasjenny.com/"><div class="async-explorations-gif project-image"></div></a>
         <div class="project-item-description">
           <div>A benchmark and analysis tool for asynchronous recursive functions. I discuss some of the most surprising results <a href="https://medium.com/@_m1010j_/async-recursion-promising-surprising-but-foremost-confusing-5e13aa8bbc06">here</a>.</div>
+        </div>
+      </div>
+    </div>
+    <div class="project-item">
+      <h1><a href="https://www.pumpkintime.app/">Pumpkin Time</a> <a href="https://github.com/m1010j/pumpkin-time"><i class="fab fa-github"></i></a></h1>
+      <div class="project-item-detail">
+        <a href="https://www.pumpkintime.app/"><div class="pumpkin-time-gif project-image"></div></a>
+        <div class="project-item-description">
+          <div>A progressive web app commissioned by an Assistant Director of the Directors Guild of America to calculate set restrictions for underage actors. Built with Vue.js and service workers.</div>
         </div>
       </div>
     </div>

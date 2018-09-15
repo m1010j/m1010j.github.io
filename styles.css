@@ -251,7 +251,8 @@ h2 {
 .andor-gif,
 .sat-zoo-gif,
 .boolean-logic-png,
-.async-explorations-gif {
+.async-explorations-gif,
+.pumpkin-time-gif {
   background-size: cover;
   background-position: center;
   margin: 0.5rem 1rem 0 0;
@@ -277,6 +278,11 @@ h2 {
 .async-explorations-gif {
   background-image: url('./img/async-explorations.gif');
   height: 17.3625rem;
+}
+
+.pumpkin-time-gif {
+  background-image: url('./img/pumpkintime.gif');
+  height: 18rem;
 }
 
 .badge img {
