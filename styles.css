@@ -59,21 +59,6 @@ a {
   display: flex;
 }
 
-.home-technologies {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.home-technologies-icons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 5rem;
-}
-
 a {
   font-weight: 700;
   color: black;

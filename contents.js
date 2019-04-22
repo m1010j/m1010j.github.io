@@ -9,20 +9,7 @@ const contents = {
             <p>In addition to writing software, I also like <a href="https://500px.com/m1010j">taking photos</a>.<p>
           </div>
         </div>
-      </div>
-    <div class="home-technologies">
-        <p>Favorite technologies:</p>
-        <div class="home-technologies-icons">
-          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img class="icon" src="./icons/javascript.png" /></a>
-          <a href="https://nodejs.org/"><img class="icon" src="./icons/nodejs.svg" /></a>
-          <a href="https://expressjs.com/"><img class="icon" src="./icons/express.png" /></a>
-          <a href="https://www.ruby-lang.org/"><img class="icon" src="./icons/ruby.png" /></a>
-          <a href="http://rubyonrails.org/"><img class="icon" src="./icons/rails.png" /></a>
-          <a href="https://reactjs.org/"><img class="icon" src="./icons/react.png" /></a>
-          <a href="https://https://vuejs.org/"><img class="icon" src="./icons/vuejs.svg" /></a>
-        </div>
-      </div>
-    </div>    
+      </div>   
   `,
     0,
   ],
