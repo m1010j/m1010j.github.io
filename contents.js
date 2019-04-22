@@ -29,6 +29,15 @@ const contents = {
   projects: [
     `
     <div class="project-item">
+      <h1><a href="https://www.matthiasjenny.com/stress-hooks/">Stress Testing React Hooks</a> <a href="https://github.com/m1010j/stress-hooks"><i class="fab fa-github"></i></a></h1>
+      <div class="project-item-detail">
+        <a href="https://www.matthiasjenny.com/stress-hooks/"><div class="stress-hooks-gif project-image"></div></a>
+        <div class="project-item-description">
+          <div>A tool to benchmark different ways of writing stateful functional componens using React Hooks . I detail how to write performant React Hooks components  <a href="https://medium.com/@_m1010j_/how-to-avoid-this-react-hooks-performance-pitfall-28770ad9abe0">here</a>.</div>
+        </div>
+      </div>
+    </div>
+    <div class="project-item">
       <h1><a href="https://async.matthiasjenny.com/">Explorations in Asynchronicity</a> <a href="https://github.com/m1010j/async-explorations"><i class="fab fa-github"></i></a> | <a href="https://www.npmjs.com/package/async-explorations-cli"><i class="fab fa-npm"></i></a></h1>
       <div class="project-item-detail">
         <a href="https://async.matthiasjenny.com/"><div class="async-explorations-gif project-image"></div></a>
