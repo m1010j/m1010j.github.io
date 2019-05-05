@@ -16,6 +16,15 @@ const contents = {
   projects: [
     `
     <div class="project-item">
+      <h1><a href="https://github.com/m1010j/github-jira-link">GitHub-Jira Link</a> <a href="https://github.com/m1010j/github-jira-link"><i class="fab fa-github"></i></a></h1>
+      <div class="project-item-detail">
+        <div class="github-jira-link-png project-image"></div>
+        <div class="project-item-description">
+          <div>A <a href="https://addons.mozilla.org/en-US/firefox/addon/github-jira-link/">Firefox</a> and <a href="https://chrome.google.com/webstore/detail/github-jira-link/npfkglcfelgebbampcngijkklhocgfia">Chrome</a> extension that uses the branch name on a GitHub pull request page to add a link to the Jira issue corresponding to the pull request.</div>
+        </div>
+      </div>
+    </div>
+    <div class="project-item">
       <h1><a href="https://www.matthiasjenny.com/stress-hooks/">Stress Testing React Hooks</a> <a href="https://github.com/m1010j/stress-hooks"><i class="fab fa-github"></i></a></h1>
       <div class="project-item-detail">
         <a href="https://www.matthiasjenny.com/stress-hooks/"><div class="stress-hooks-gif project-image"></div></a>

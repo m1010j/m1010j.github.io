@@ -238,7 +238,8 @@ h2 {
 .boolean-logic-png,
 .async-explorations-gif,
 .pumpkin-time-gif,
-.stress-hooks-gif {
+.stress-hooks-gif,
+.github-jira-link-png {
   background-size: cover;
   background-position: center;
   margin: 0.5rem 1rem 0 0;
@@ -275,6 +276,12 @@ h2 {
 .pumpkin-time-gif {
   background-image: url('./img/pumpkintime.gif');
   height: 18rem;
+}
+
+.github-jira-link-png {
+  background-image: url('./img/github-jira-link.png');
+  height: 11rem;
+  width: 40rem;
 }
 
 .badge img {
