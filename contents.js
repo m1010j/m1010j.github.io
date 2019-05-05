@@ -20,7 +20,7 @@ const contents = {
       <div class="project-item-detail">
         <div class="github-jira-link-png project-image"></div>
         <div class="project-item-description">
-          <div>A <a href="https://addons.mozilla.org/en-US/firefox/addon/github-jira-link/">Firefox</a> and <a href="https://chrome.google.com/webstore/detail/github-jira-link/npfkglcfelgebbampcngijkklhocgfia">Chrome</a> extension that uses the branch name on a GitHub pull request page to add a link to the Jira issue corresponding to the pull request.</div>
+          <div>A <a href="https://chrome.google.com/webstore/detail/github-jira-link/npfkglcfelgebbampcngijkklhocgfia">Chrome</a>and <a href="https://addons.mozilla.org/en-US/firefox/addon/github-jira-link/">Firefox</a> extension that uses the branch name on a GitHub pull request page to add a link to the Jira issue corresponding to the pull request.</div>
         </div>
       </div>
     </div>
