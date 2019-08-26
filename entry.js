@@ -37,6 +37,4 @@ document.addEventListener('DOMContentLoaded', function() {
   const navItemIdx = navItemTexts.indexOf(hash);
   const navigator = new Navigator(navItemTexts, navItemIdx);
   document.onkeydown = navigator.handleKeydown;
-  document.addEventListener('touchstart', navigator.handleTouchStart, false);
-  document.addEventListener('touchmove', navigator.handleTouchMove, false);
 });
