@@ -29,7 +29,7 @@ const contents = {
       <div class="project-item-detail">
         <a href="https://www.matthiasjenny.com/stress-hooks/"><div class="stress-hooks-gif project-image"></div></a>
         <div class="project-item-description">
-          <div>A tool to benchmark different ways of writing stateful functional componens using React Hooks . I detail how to write performant React Hooks components  <a href="https://medium.com/@_m1010j_/how-to-avoid-this-react-hooks-performance-pitfall-28770ad9abe0">here</a>.</div>
+          <div>A tool to benchmark different ways of writing stateful functional components using React Hooks . I detail how to write performant React Hooks components  <a href="https://medium.com/@_m1010j_/how-to-avoid-this-react-hooks-performance-pitfall-28770ad9abe0">here</a>.</div>
         </div>
       </div>
     </div>
