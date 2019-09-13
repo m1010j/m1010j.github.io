@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/m1010j
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://matthiasjenny.com
+  * I am m1010j (https://keybase.io/m1010j) on keybase.
+  * I have a public key ASBcVDMZPfmmd6wCTnnCUzSiNZ9tB42o4Mqu973FjdNyFwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01205c5433193df9a677ac024e79c25334a2359f6d078da8e0caaef7bdc58dd372170a",
+      "host": "keybase.io",
+      "kid": "01205c5433193df9a677ac024e79c25334a2359f6d078da8e0caaef7bdc58dd372170a",
+      "uid": "5e39885e89cba6413ff96a926c517519",
+      "username": "m1010j"
+    },
+    "merkle_root": {
+      "ctime": 1568382694,
+      "hash": "43a547d87a5d210ca7180f9f43f3ff95273aa470a39f8e529f0c54ef9161df9230c57725b7eb76eb339c0ead93a1dd14f129dafd2641a417a3d9448d47d88e29",
+      "hash_meta": "194bc071077ef0ec0e6abad74626292e6dbe45ff37987430d7d1907cc77d5fcf",
+      "seqno": 7159618
+    },
+    "service": {
+      "entropy": "EEW0Jtfw7fwjNsYobayXjtt7",
+      "hostname": "matthiasjenny.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "4.4.1"
+  },
+  "ctime": 1568382702,
+  "expire_in": 504576000,
+  "prev": "a9ca7de6c576b671d1fe25d69b6b6aee39ddf5ce46d7035a84eee1e0ccf78ba0",
+  "seqno": 10,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgXFQzGT35pnesAk55wlM0ojWfbQeNqODKrve9xY3TchcKp3BheWxvYWTESpcCCsQgqcp95sV2tnHR/iXWm2tq7jnd9c5G1wNahO7h4Mz3i6DEIFZOKA4ScqE68yJJ8+GLeVjLIKJeY2KaPoXQwUZPeocvAgHCo3NpZ8RAhaCKXewSUKqUOpDUCuW8cUCuJwOCYHHGzgVnjTk6Z1vFV1mJESguiwAnI75R5Z69MswzHItFz3osnKkgAGIsBqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIO/EpgpupH2E6NZqwmTGEEh4vGvzZcUC/XLDCoDhbgQmo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/m1010j
+
+==================================================================
