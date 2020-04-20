@@ -96,8 +96,8 @@ const contents = {
     `
   <div class="resume">
     <div class="iframe-container">
-      <a href="https://www.matthiasjenny.com/resume/Matthias_Jenny_Resume.pdf" target="_blank" id="open-resume"><i class="fas fa-external-link-alt"></i></a>
-      <iframe src="https://www.matthiasjenny.com/resume/index.html"></iframe>
+      <a href="resume/Matthias_Jenny_Resume.pdf" target="_blank" id="open-resume"><i class="fas fa-external-link-alt"></i></a>
+      <iframe src="resume/index.html"></iframe>
     </div>
   </div>
   `,
