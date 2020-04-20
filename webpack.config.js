@@ -1,21 +1,21 @@
-const path = require('path');
+const path = require("path");
 
 module.exports = {
-  entry: './entry.js',
+  entry: "./entry.js",
   output: {
     path: path.resolve(__dirname),
-    filename: 'script.js',
+    filename: "dist/script.js",
   },
   module: {
     rules: [
       {
         test: [/\.js?$/],
-        use: { loader: 'babel-loader' },
+        use: { loader: "babel-loader" },
       },
     ],
   },
-  devtool: 'source-map',
+  devtool: "source-map",
   resolve: {
-    extensions: ['.js', '*'],
+    extensions: [".js", "*"],
   },
 };
