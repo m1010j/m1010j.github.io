@@ -1,5 +1,5 @@
-import resizeResume from './resize_resume';
-import contents from '../contents';
+import { resizeResume } from "./resize_resume";
+import { contents } from "../contents";
 
 export const toggleActive = (navItem, hash) => {
   const type = navItem.innerText.toLowerCase();
@@ -8,16 +8,16 @@ export const toggleActive = (navItem, hash) => {
   }
 };
 
-export const toggleHash = type => {
+export const toggleHash = (type) => {
   window.location = `#${type}`;
-  if (type === 'resume') {
+  if (type === "resume") {
     setTimeout(resizeResume, 500);
   }
 };
 
 export const toggleContent = (content, navItems, hash) => {
   content.innerHTML = contents[hash][0];
-  navItems.forEach(navItem => {
+  navItems.forEach((navItem) => {
     const type = navItem.innerText.toLowerCase();
     if (hash === type) {
       navItem.classList.add(`${type}-active`);
@@ -26,7 +26,7 @@ export const toggleContent = (content, navItems, hash) => {
       navItem.classList.remove(`${type}-active`);
       navItem.classList.add(type);
     }
-    if (hash === 'resume') {
+    if (hash === "resume") {
       setTimeout(resizeResume, 300);
     }
   });

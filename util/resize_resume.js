@@ -1,15 +1,15 @@
-import setFontSize from './set_font_size';
+import { setFontSize } from "./set_font_size";
 
-export default () => {
+export const resizeResume = () => {
   setFontSize();
   const width = window.innerWidth;
   const height = window.innerHeight;
-  const iframe = document.getElementsByTagName('iframe')[0];
+  const iframe = document.getElementsByTagName("iframe")[0];
   const innerDoc = iframe.contentDocument || iframe.contentWindow.document;
-  const innerHtml = innerDoc.getElementsByTagName('html')[0];
-  const openResume = document.getElementById('open-resume');
+  const innerHtml = innerDoc.getElementsByTagName("html")[0];
+  const openResume = document.getElementById("open-resume");
   const iframeContainer = document.getElementsByClassName(
-    'iframe-container'
+    "iframe-container"
   )[0];
   if (!iframe || !innerDoc || !innerHtml || !openResume || !iframeContainer) {
     setTimeout(resizeResume, 100);
@@ -25,7 +25,8 @@ export default () => {
     }
     iframeContainer.style.opacity = 1;
     iframe.style.width = `${Math.floor(multiplier * width)}px`;
-    iframe.style.height = `${Math.floor(multiplier * width * 10.41 / 8)}px`;
+    iframe.style.height = `${Math.floor((multiplier * width * 10.41) / 8)}px`;
     innerHtml.style.fontSize = `${width / factor}em`;
   }
-}
+};
+

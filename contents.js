@@ -1,4 +1,4 @@
-const contents = {
+export const contents = {
   home: [
     `
     <div class="home-content">
@@ -117,4 +117,3 @@ const contents = {
   ],
 };
 
-export default contents;
