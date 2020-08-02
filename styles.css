@@ -165,11 +165,6 @@ p {
 }
 
 .home-active,
-.resume-active {
-  color: #ffffff;
-}
-
-.home-active,
 .projects-active,
 .resume-active,
 .contact-active,
@@ -186,6 +181,9 @@ p {
     color 0.18s ease-out, background-color 0.18s ease-out;
 }
 
+.home-active,
+.resume-active,
+.contact-active,
 .home-active:hover,
 .resume-active:hover {
   color: #ffffff;
