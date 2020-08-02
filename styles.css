@@ -12,9 +12,9 @@ body {
 }
 
 body::after {
-  content: '';
+  content: "";
   background-color: #eeeeef;
-  background-image: url('./background.jpg');
+  background-image: url("./background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -108,7 +108,7 @@ p {
   padding: 0.3rem;
   color: black;
   cursor: pointer;
-  font-family: 'Barlow', sans-serif;
+  font-family: "Barlow", sans-serif;
   font-weight: 500;
   box-shadow: none;
   font-size: 1.3rem;
@@ -137,7 +137,7 @@ p {
 }
 
 .home-active {
-  background-color: #afffb5;
+  background-color: #a54776;
 }
 
 .projects {
@@ -145,7 +145,7 @@ p {
 }
 
 .projects-active {
-  background-color: #83a5ff;
+  background-color: #e2d5e8;
 }
 
 .resume {
@@ -153,7 +153,7 @@ p {
 }
 
 .resume-active {
-  background-color: #ff8f9e;
+  background-color: #170f1a;
 }
 
 .contact {
@@ -161,7 +161,12 @@ p {
 }
 
 .contact-active {
-  background-color: #faff8f;
+  background-color: #6385cf;
+}
+
+.home-active,
+.resume-active {
+  color: #ffffff;
 }
 
 .home-active,
@@ -181,6 +186,11 @@ p {
     color 0.18s ease-out, background-color 0.18s ease-out;
 }
 
+.home-active:hover,
+.resume-active:hover {
+  color: #ffffff;
+}
+
 #box-shadow {
   grid-row-start: 2;
   grid-column-start: 1;
@@ -192,7 +202,7 @@ p {
   grid-row-start: 3;
   grid-column-start: 1;
   grid-column-end: span 4;
-  font-family: 'Barlow', sans-serif;
+  font-family: "Barlow", sans-serif;
   font-weight: 500;
   font-size: 1.3rem;
   padding: 1rem;
@@ -248,38 +258,38 @@ h2 {
 }
 
 .andor-gif {
-  background-image: url('./img/andor.gif');
+  background-image: url("./img/andor.gif");
   height: 8.5rem;
 }
 
 .sat-zoo-gif {
-  background-image: url('./img/sat-zoo.gif');
+  background-image: url("./img/sat-zoo.gif");
   height: 9.5rem;
 }
 
 .boolean-logic-png {
-  background-image: url('./img/boolean-logic.png');
+  background-image: url("./img/boolean-logic.png");
   height: 8.623rem;
 }
 
 .async-explorations-gif {
-  background-image: url('./img/async-explorations.gif');
+  background-image: url("./img/async-explorations.gif");
   height: 17.3625rem;
 }
 
 .stress-hooks-gif {
-  background-image: url('./img/stress-hooks.gif');
+  background-image: url("./img/stress-hooks.gif");
   height: 24rem;
   background-size: contain;
 }
 
 .pumpkin-time-gif {
-  background-image: url('./img/pumpkintime.gif');
+  background-image: url("./img/pumpkintime.gif");
   height: 18rem;
 }
 
 .github-jira-link-png {
-  background-image: url('./img/github-jira-link.png');
+  background-image: url("./img/github-jira-link.png");
   height: 11rem;
 }
 
