@@ -338,6 +338,7 @@ iframe body {
   font-size: 0.5em;
 }
 
+.home-content,
 .contact-content {
   display: flex;
   flex-direction: column;
@@ -403,6 +404,7 @@ iframe body {
     letter-spacing: 0.1rem;
   }
 
+  .home-content,
   .contact-content {
     height: 66vh;
   }
