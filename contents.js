@@ -5,7 +5,7 @@ export const contents = {
         <div>
           <img class="portrait" src="./img/matthias-jenny.png" />
           <div>
-            <p>Hi, I'm Matthias Jenny, and I'm a software engineer. After writing a <a href="http://dspace.mit.edu/handle/1721.1/113731" target="_blank">PhD thesis</a> on computability theory, conditionals, and non-classical logic at MIT, I am now based in New York City, where I work at <a href="https://evenfinancial.com">Even Financial</a>.</p>
+            <p>Hi, I'm Matthias Jenny, and I'm a software engineer. After writing a <a href="http://dspace.mit.edu/handle/1721.1/113731" target="_blank">PhD thesis</a> on computability theory, conditionals, and non-classical logic at MIT, I am now based in New York City, where I work at <a href="https://www.tradeweb.com">Tradeweb</a>.</p>
             <p>In addition to writing software, I also like <a href="https://500px.com/m1010j">taking photos</a>.<p>
           </div>
         </div>
@@ -116,4 +116,3 @@ export const contents = {
     3,
   ],
 };
-
